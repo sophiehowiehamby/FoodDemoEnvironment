@@ -1,0 +1,619 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Order from Savor Restaurant online — Pickup or delivery. Fresh, seasonal farm-to-table cuisine delivered to your door.">
+  <title>Order Online — Savor Restaurant</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body data-page="order">
+
+  <!-- ── Navigation ── -->
+  <nav class="navbar" role="navigation" aria-label="Main navigation">
+    <div class="navbar-inner">
+      <a href="index.html" class="navbar-logo" aria-label="Savor home">
+        <div class="logo-icon" aria-hidden="true">🍽</div>
+        <span class="logo-text">Savor</span>
+      </a>
+
+      <ul class="navbar-nav" role="list">
+        <li><a href="index.html" class="nav-link">Home</a></li>
+        <li><a href="menu.html" class="nav-link">Menu</a></li>
+        <li><a href="contact.html" class="nav-link">Contact</a></li>
+        <li><a href="order.html" class="nav-link active" aria-current="page">Order Now</a></li>
+      </ul>
+
+      <div class="navbar-actions">
+        <a href="order.html" class="cart-btn" aria-label="View cart">
+          🛒 Cart
+          <span class="cart-count hidden" aria-live="polite">0</span>
+        </a>
+        <button class="menu-toggle" aria-label="Toggle menu" aria-expanded="false">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+    </div>
+  </nav>
+
+  <!-- ── Page Hero ── -->
+  <section class="page-hero" style="padding-bottom: 40px;">
+    <div class="page-hero-bg" aria-hidden="true"></div>
+    <div class="container">
+      <div class="badge">Online Ordering</div>
+      <h1>Order <span class="text-gradient">Online</span></h1>
+      <p>Pickup or delivery — your favorite Savor dishes ready when you are.</p>
+    </div>
+  </section>
+
+  <!-- ── Order Layout ── -->
+  <section class="section-sm" aria-label="Online ordering">
+    <div class="container">
+
+      <!-- Checkout steps -->
+      <div class="checkout-steps" role="list" aria-label="Checkout progress">
+        <div class="step active" role="listitem" id="step-indicator-1">
+          <span class="step-num" aria-hidden="true">1</span>
+          Build Order
+        </div>
+        <div class="step" role="listitem" id="step-indicator-2">
+          <span class="step-num" aria-hidden="true">2</span>
+          Delivery Info
+        </div>
+        <div class="step" role="listitem" id="step-indicator-3">
+          <span class="step-num" aria-hidden="true">3</span>
+          Payment
+        </div>
+      </div>
+
+      <div class="order-layout">
+
+        <!-- ── LEFT: Menu & Checkout Panels ── -->
+        <div>
+
+          <!-- Step 1: Build Order -->
+          <div class="checkout-panel active" id="step1" role="tabpanel" aria-labelledby="step-indicator-1">
+            <h2 class="checkout-section-heading"><span aria-hidden="true">🍽</span> Choose Your Dishes</h2>
+            <p style="color:var(--color-text-muted); margin-bottom:32px; font-size:0.95rem;">
+              Select items from our menu to build your order. Add as many as you like!
+            </p>
+
+            <!-- Quick-Add Menu Grid -->
+            <div style="display:grid; grid-template-columns: repeat(auto-fill, minmax(280px, 1fr)); gap:20px;">
+
+              <!-- Starters -->
+              <div style="grid-column: 1 / -1; margin-top:8px;">
+                <h3 style="font-size:1rem; color:var(--color-text-muted); font-weight:600; text-transform:uppercase; letter-spacing:0.08em; margin-bottom:16px;">
+                  🥗 Starters
+                </h3>
+              </div>
+
+              <article class="menu-item">
+                <div class="menu-item-img" style="height:160px;">
+                  <img src="https://images.unsplash.com/photo-1621996346565-e3dbc646d9a9?w=400&q=80&auto=format&fit=crop"
+                    alt="Heirloom Burrata" loading="lazy">
+                </div>
+                <div class="menu-item-body">
+                  <h3>Heirloom Burrata</h3>
+                  <div class="menu-item-footer">
+                    <span class="menu-item-price">$18</span>
+                    <button class="add-to-order-btn"
+                      data-id="starter-1" data-name="Heirloom Burrata" data-price="18"
+                      data-img="https://images.unsplash.com/photo-1621996346565-e3dbc646d9a9?w=200&q=80&auto=format&fit=crop"
+                      aria-label="Add Heirloom Burrata">+ Add</button>
+                  </div>
+                </div>
+              </article>
+
+              <article class="menu-item">
+                <div class="menu-item-img" style="height:160px;">
+                  <img src="https://images.unsplash.com/photo-1578020190125-f4f7c18bc9cb?w=400&q=80&auto=format&fit=crop"
+                    alt="Ahi Tuna Tartare" loading="lazy">
+                </div>
+                <div class="menu-item-body">
+                  <h3>Ahi Tuna Tartare</h3>
+                  <div class="menu-item-footer">
+                    <span class="menu-item-price">$22</span>
+                    <button class="add-to-order-btn"
+                      data-id="starter-2" data-name="Ahi Tuna Tartare" data-price="22"
+                      data-img="https://images.unsplash.com/photo-1578020190125-f4f7c18bc9cb?w=200&q=80&auto=format&fit=crop"
+                      aria-label="Add Ahi Tuna Tartare">+ Add</button>
+                  </div>
+                </div>
+              </article>
+
+              <article class="menu-item">
+                <div class="menu-item-img" style="height:160px;">
+                  <img src="https://images.unsplash.com/photo-1555244162-803834f70033?w=400&q=80&auto=format&fit=crop"
+                    alt="Charcuterie Board" loading="lazy">
+                </div>
+                <div class="menu-item-body">
+                  <h3>Artisan Charcuterie Board</h3>
+                  <div class="menu-item-footer">
+                    <span class="menu-item-price">$28</span>
+                    <button class="add-to-order-btn"
+                      data-id="starter-4" data-name="Artisan Charcuterie Board" data-price="28"
+                      data-img="https://images.unsplash.com/photo-1555244162-803834f70033?w=200&q=80&auto=format&fit=crop"
+                      aria-label="Add Charcuterie Board">+ Add</button>
+                  </div>
+                </div>
+              </article>
+
+              <!-- Mains -->
+              <div style="grid-column: 1 / -1; margin-top:24px;">
+                <h3 style="font-size:1rem; color:var(--color-text-muted); font-weight:600; text-transform:uppercase; letter-spacing:0.08em; margin-bottom:16px;">
+                  🍽 Mains
+                </h3>
+              </div>
+
+              <article class="menu-item">
+                <div class="menu-item-img" style="height:160px;">
+                  <img src="https://images.unsplash.com/photo-1555396273-367ea4eb4db5?w=400&q=80&auto=format&fit=crop"
+                    alt="Wild Salmon" loading="lazy">
+                </div>
+                <div class="menu-item-body">
+                  <h3>Pan-Seared Wild Salmon</h3>
+                  <div class="menu-item-footer">
+                    <span class="menu-item-price">$34</span>
+                    <button class="add-to-order-btn"
+                      data-id="main-1" data-name="Pan-Seared Wild Salmon" data-price="34"
+                      data-img="https://images.unsplash.com/photo-1555396273-367ea4eb4db5?w=200&q=80&auto=format&fit=crop"
+                      aria-label="Add Wild Salmon">+ Add</button>
+                  </div>
+                </div>
+              </article>
+
+              <article class="menu-item">
+                <div class="menu-item-img" style="height:160px;">
+                  <img src="https://images.unsplash.com/photo-1544025162-d76694265947?w=400&q=80&auto=format&fit=crop"
+                    alt="Braised Short Rib" loading="lazy">
+                </div>
+                <div class="menu-item-body">
+                  <h3>Braised Short Rib</h3>
+                  <div class="menu-item-footer">
+                    <span class="menu-item-price">$42</span>
+                    <button class="add-to-order-btn"
+                      data-id="main-2" data-name="Braised Short Rib" data-price="42"
+                      data-img="https://images.unsplash.com/photo-1544025162-d76694265947?w=200&q=80&auto=format&fit=crop"
+                      aria-label="Add Braised Short Rib">+ Add</button>
+                  </div>
+                </div>
+              </article>
+
+              <article class="menu-item">
+                <div class="menu-item-img" style="height:160px;">
+                  <img src="https://images.unsplash.com/photo-1565299585323-38d6b0865b47?w=400&q=80&auto=format&fit=crop"
+                    alt="Mushroom Wellington" loading="lazy">
+                </div>
+                <div class="menu-item-body">
+                  <h3>Mushroom Wellington</h3>
+                  <div class="menu-item-footer">
+                    <span class="menu-item-price">$28</span>
+                    <button class="add-to-order-btn"
+                      data-id="main-4" data-name="Mushroom Wellington" data-price="28"
+                      data-img="https://images.unsplash.com/photo-1565299585323-38d6b0865b47?w=200&q=80&auto=format&fit=crop"
+                      aria-label="Add Mushroom Wellington">+ Add</button>
+                  </div>
+                </div>
+              </article>
+
+              <article class="menu-item">
+                <div class="menu-item-img" style="height:160px;">
+                  <img src="https://images.unsplash.com/photo-1559847844-5315695dadae?w=400&q=80&auto=format&fit=crop"
+                    alt="Prime Ribeye" loading="lazy">
+                </div>
+                <div class="menu-item-body">
+                  <h3>Prime Dry-Aged Ribeye</h3>
+                  <div class="menu-item-footer">
+                    <span class="menu-item-price">$58</span>
+                    <button class="add-to-order-btn"
+                      data-id="main-6" data-name="Prime Dry-Aged Ribeye" data-price="58"
+                      data-img="https://images.unsplash.com/photo-1559847844-5315695dadae?w=200&q=80&auto=format&fit=crop"
+                      aria-label="Add Prime Ribeye">+ Add</button>
+                  </div>
+                </div>
+              </article>
+
+              <!-- Pasta -->
+              <div style="grid-column: 1 / -1; margin-top:24px;">
+                <h3 style="font-size:1rem; color:var(--color-text-muted); font-weight:600; text-transform:uppercase; letter-spacing:0.08em; margin-bottom:16px;">
+                  🍝 Pasta &amp; Risotto
+                </h3>
+              </div>
+
+              <article class="menu-item">
+                <div class="menu-item-img" style="height:160px;">
+                  <img src="https://images.unsplash.com/photo-1563379926898-05f4575a45d8?w=400&q=80&auto=format&fit=crop"
+                    alt="Truffle Rigatoni" loading="lazy">
+                </div>
+                <div class="menu-item-body">
+                  <h3>Black Truffle Rigatoni</h3>
+                  <div class="menu-item-footer">
+                    <span class="menu-item-price">$32</span>
+                    <button class="add-to-order-btn"
+                      data-id="pasta-1" data-name="Black Truffle Rigatoni" data-price="32"
+                      data-img="https://images.unsplash.com/photo-1563379926898-05f4575a45d8?w=200&q=80&auto=format&fit=crop"
+                      aria-label="Add Black Truffle Rigatoni">+ Add</button>
+                  </div>
+                </div>
+              </article>
+
+              <article class="menu-item">
+                <div class="menu-item-img" style="height:160px;">
+                  <img src="https://images.unsplash.com/photo-1543339308-43e59d6b73a6?w=400&q=80&auto=format&fit=crop"
+                    alt="Porcini Risotto" loading="lazy">
+                </div>
+                <div class="menu-item-body">
+                  <h3>Porcini Mushroom Risotto</h3>
+                  <div class="menu-item-footer">
+                    <span class="menu-item-price">$26</span>
+                    <button class="add-to-order-btn"
+                      data-id="pasta-3" data-name="Porcini Mushroom Risotto" data-price="26"
+                      data-img="https://images.unsplash.com/photo-1543339308-43e59d6b73a6?w=200&q=80&auto=format&fit=crop"
+                      aria-label="Add Porcini Risotto">+ Add</button>
+                  </div>
+                </div>
+              </article>
+
+              <!-- Desserts -->
+              <div style="grid-column: 1 / -1; margin-top:24px;">
+                <h3 style="font-size:1rem; color:var(--color-text-muted); font-weight:600; text-transform:uppercase; letter-spacing:0.08em; margin-bottom:16px;">
+                  🍮 Desserts
+                </h3>
+              </div>
+
+              <article class="menu-item">
+                <div class="menu-item-img" style="height:160px;">
+                  <img src="https://images.unsplash.com/photo-1578985545062-69928b1d9587?w=400&q=80&auto=format&fit=crop"
+                    alt="Chocolate Lava Cake" loading="lazy">
+                </div>
+                <div class="menu-item-body">
+                  <h3>Dark Chocolate Lava Cake</h3>
+                  <div class="menu-item-footer">
+                    <span class="menu-item-price">$14</span>
+                    <button class="add-to-order-btn"
+                      data-id="dessert-1" data-name="Dark Chocolate Lava Cake" data-price="14"
+                      data-img="https://images.unsplash.com/photo-1578985545062-69928b1d9587?w=200&q=80&auto=format&fit=crop"
+                      aria-label="Add Chocolate Lava Cake">+ Add</button>
+                  </div>
+                </div>
+              </article>
+
+              <article class="menu-item">
+                <div class="menu-item-img" style="height:160px;">
+                  <img src="https://images.unsplash.com/photo-1488477181946-6428a0291777?w=400&q=80&auto=format&fit=crop"
+                    alt="Crème Brûlée" loading="lazy">
+                </div>
+                <div class="menu-item-body">
+                  <h3>Vanilla Bean Crème Brûlée</h3>
+                  <div class="menu-item-footer">
+                    <span class="menu-item-price">$12</span>
+                    <button class="add-to-order-btn"
+                      data-id="dessert-2" data-name="Vanilla Bean Crème Brûlée" data-price="12"
+                      data-img="https://images.unsplash.com/photo-1488477181946-6428a0291777?w=200&q=80&auto=format&fit=crop"
+                      aria-label="Add Crème Brûlée">+ Add</button>
+                  </div>
+                </div>
+              </article>
+
+            </div><!-- end grid -->
+
+            <div style="margin-top:36px; display:flex; justify-content:flex-end;">
+              <button onclick="goToStep(2)" class="btn btn-primary btn-lg">
+                Continue to Delivery Info →
+              </button>
+            </div>
+          </div><!-- /step1 -->
+
+          <!-- Step 2: Delivery Info -->
+          <div class="checkout-panel" id="step2" role="tabpanel" aria-labelledby="step-indicator-2">
+            <h2 class="checkout-section-heading"><span aria-hidden="true">🚚</span> Delivery Information</h2>
+
+            <!-- Delivery/Pickup toggle -->
+            <div class="delivery-options" role="radiogroup" aria-label="Delivery or Pickup">
+              <label class="delivery-option selected" data-mode="delivery">
+                <input type="radio" name="delivery" value="delivery" checked>
+                <div class="delivery-option-icon" aria-hidden="true">🚚</div>
+                <div class="delivery-option-label">Delivery</div>
+                <div class="delivery-option-time">~30–45 min · $4.99</div>
+              </label>
+              <label class="delivery-option" data-mode="pickup">
+                <input type="radio" name="delivery" value="pickup">
+                <div class="delivery-option-icon" aria-hidden="true">🏃</div>
+                <div class="delivery-option-label">Pickup</div>
+                <div class="delivery-option-time">~20 min · Free</div>
+              </label>
+            </div>
+
+            <div id="deliveryFields">
+              <div class="form-row">
+                <div class="form-group">
+                  <label for="delivFirstName">First Name <span aria-hidden="true" style="color:#ef4444">*</span></label>
+                  <input type="text" id="delivFirstName" name="delivFirstName" placeholder="Jane" required autocomplete="given-name">
+                </div>
+                <div class="form-group">
+                  <label for="delivLastName">Last Name <span aria-hidden="true" style="color:#ef4444">*</span></label>
+                  <input type="text" id="delivLastName" name="delivLastName" placeholder="Doe" required autocomplete="family-name">
+                </div>
+              </div>
+
+              <div class="form-group">
+                <label for="delivPhone">Phone Number <span aria-hidden="true" style="color:#ef4444">*</span></label>
+                <input type="tel" id="delivPhone" name="delivPhone" placeholder="(415) 555-0100" required autocomplete="tel">
+              </div>
+
+              <div class="form-group">
+                <label for="delivAddress">Street Address <span aria-hidden="true" style="color:#ef4444">*</span></label>
+                <input type="text" id="delivAddress" name="delivAddress" placeholder="123 Main Street" required autocomplete="street-address">
+              </div>
+
+              <div class="form-row">
+                <div class="form-group">
+                  <label for="delivCity">City <span aria-hidden="true" style="color:#ef4444">*</span></label>
+                  <input type="text" id="delivCity" name="delivCity" placeholder="San Francisco" required autocomplete="address-level2">
+                </div>
+                <div class="form-group">
+                  <label for="delivZip">ZIP Code <span aria-hidden="true" style="color:#ef4444">*</span></label>
+                  <input type="text" id="delivZip" name="delivZip" placeholder="94105" required autocomplete="postal-code" maxlength="5">
+                </div>
+              </div>
+
+              <div class="form-group">
+                <label for="delivNotes">Delivery Notes</label>
+                <textarea id="delivNotes" name="delivNotes" rows="2" placeholder="Apartment number, gate code, special instructions..."></textarea>
+              </div>
+            </div>
+
+            <div style="display:flex; gap:16px; justify-content:flex-end; margin-top:16px;">
+              <button onclick="goToStep(1)" class="btn btn-outline">← Back</button>
+              <button onclick="goToStep(3)" class="btn btn-primary btn-lg">Continue to Payment →</button>
+            </div>
+          </div><!-- /step2 -->
+
+          <!-- Step 3: Payment -->
+          <div class="checkout-panel" id="step3" role="tabpanel" aria-labelledby="step-indicator-3">
+            <h2 class="checkout-section-heading"><span aria-hidden="true">💳</span> Payment</h2>
+
+            <!-- Review order summary -->
+            <div style="background:rgba(255,255,255,0.03); border:1px solid var(--color-border); border-radius:var(--radius-md); padding:20px; margin-bottom:32px;">
+              <h4 style="margin-bottom:12px; color:var(--color-text);">Order Summary</h4>
+              <div id="paymentCartSummary" style="font-size:0.9rem; color:var(--color-text-muted);"></div>
+            </div>
+
+            <!-- Payment methods -->
+            <div class="payment-methods" role="radiogroup" aria-label="Payment method">
+              <label class="payment-option selected" data-method="card">
+                <input type="radio" name="payment" value="card" checked>
+                <span class="payment-option-logo" aria-hidden="true">💳</span>
+                <span class="payment-option-name">Credit / Debit Card</span>
+              </label>
+              <label class="payment-option" data-method="apple-pay">
+                <input type="radio" name="payment" value="apple-pay">
+                <span class="payment-option-logo" aria-hidden="true">🍎</span>
+                <span class="payment-option-name">Apple Pay</span>
+              </label>
+              <label class="payment-option" data-method="google-pay">
+                <input type="radio" name="payment" value="google-pay">
+                <span class="payment-option-logo" aria-hidden="true">🔵</span>
+                <span class="payment-option-name">Google Pay</span>
+              </label>
+            </div>
+
+            <!-- Card fields -->
+            <div id="cardFields">
+              <div class="form-group">
+                <label for="cardNumber">Card Number</label>
+                <input type="text" id="cardNumber" placeholder="1234 5678 9012 3456" maxlength="19" inputmode="numeric">
+              </div>
+              <div class="form-row">
+                <div class="form-group">
+                  <label for="cardExpiry">Expiry Date</label>
+                  <input type="text" id="cardExpiry" placeholder="MM/YY" maxlength="5" inputmode="numeric">
+                </div>
+                <div class="form-group">
+                  <label for="cardCvv">CVV</label>
+                  <input type="text" id="cardCvv" placeholder="•••" maxlength="4" inputmode="numeric">
+                </div>
+              </div>
+              <div class="form-group">
+                <label for="cardName">Name on Card</label>
+                <input type="text" id="cardName" placeholder="Jane Doe" autocomplete="cc-name">
+              </div>
+            </div>
+
+            <p style="font-size:0.8rem; color:var(--color-text-muted); margin-bottom:24px; display:flex; align-items:center; gap:6px;">
+              <span aria-hidden="true">🔒</span> Your payment information is encrypted and secure.
+            </p>
+
+            <div style="display:flex; gap:16px; justify-content:flex-end;">
+              <button onclick="goToStep(2)" class="btn btn-outline">← Back</button>
+              <button onclick="placeOrder()" class="btn btn-accent btn-lg">
+                🎉 Place Order
+              </button>
+            </div>
+          </div><!-- /step3 -->
+
+          <!-- Order Confirmation -->
+          <div class="order-confirmation" id="orderConfirmation" role="alert" aria-live="polite">
+            <div class="confirmation-icon" aria-hidden="true">✓</div>
+            <h2>Order Confirmed! 🎉</h2>
+            <p style="color:var(--color-text-muted); margin-bottom:8px;">Thank you for your order!</p>
+            <div class="confirmation-number" aria-label="Order number">
+              <span id="orderNumber">SV-00000</span>
+            </div>
+            <p style="color:var(--color-text-muted); font-size:0.9rem; margin-top:12px;">
+              A confirmation has been sent to your phone number.
+            </p>
+
+            <div class="tracking-bar" aria-label="Order tracking">
+              <h4 style="margin-bottom:4px; color:var(--color-text);">Live Order Tracking</h4>
+              <p style="font-size:0.85rem; color:var(--color-text-muted);">Estimated delivery: 30–40 minutes</p>
+              <div class="tracking-steps">
+                <div class="tracking-step done" aria-label="Order received - complete">
+                  <div class="tracking-step-icon" aria-hidden="true">✓</div>
+                  <div class="tracking-step-info">
+                    <p>Order Received</p>
+                    <span>Just now</span>
+                  </div>
+                </div>
+                <div class="tracking-step active" aria-label="Being prepared - in progress">
+                  <div class="tracking-step-icon" aria-hidden="true">👨‍🍳</div>
+                  <div class="tracking-step-info">
+                    <p>Being Prepared</p>
+                    <span>~15 minutes</span>
+                  </div>
+                </div>
+                <div class="tracking-step pending" aria-label="Out for delivery - pending">
+                  <div class="tracking-step-icon" aria-hidden="true">🚚</div>
+                  <div class="tracking-step-info">
+                    <p>Out for Delivery</p>
+                    <span>~25 minutes</span>
+                  </div>
+                </div>
+                <div class="tracking-step pending" aria-label="Delivered - pending">
+                  <div class="tracking-step-icon" aria-hidden="true">🏠</div>
+                  <div class="tracking-step-info">
+                    <p>Delivered</p>
+                    <span>~35 minutes</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <a href="index.html" class="btn btn-primary btn-lg mt-40">← Back to Home</a>
+          </div>
+
+        </div><!-- /left column -->
+
+        <!-- ── RIGHT: Cart Panel ── -->
+        <aside>
+          <div class="order-panel" role="complementary" aria-label="Your order">
+            <h3><span aria-hidden="true">🛒</span> Your Order</h3>
+
+            <div class="cart-items" id="cartItems" aria-live="polite">
+              <div class="cart-empty">
+                <span class="cart-empty-icon" aria-hidden="true">🛒</span>
+                <p>Your cart is empty</p>
+                <p>Add items from the menu above</p>
+              </div>
+            </div>
+
+            <div class="cart-summary" aria-label="Order totals">
+              <div class="cart-row">
+                <span>Subtotal</span>
+                <span class="amount" id="cartSubtotal">$0.00</span>
+              </div>
+              <div class="cart-row">
+                <span>Tax (8.75%)</span>
+                <span class="amount" id="cartTax">$0.00</span>
+              </div>
+              <div class="cart-row">
+                <span>Delivery</span>
+                <span class="amount" id="cartDelivery">—</span>
+              </div>
+              <div class="cart-row total">
+                <span>Total</span>
+                <span class="amount" id="cartTotal">$0.00</span>
+              </div>
+            </div>
+
+            <p style="font-size:0.8rem; color:var(--color-text-muted); line-height:1.5; margin-bottom:16px;">
+              🕐 Delivery in ~30–40 min · Pickup in ~20 min<br>
+              Free delivery on orders over $60
+            </p>
+          </div>
+        </aside>
+
+      </div><!-- /order-layout -->
+    </div>
+  </section>
+
+  <!-- ── Footer ── -->
+  <footer class="footer" role="contentinfo">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <a href="index.html" class="navbar-logo" style="font-size:1.3rem;">
+            <div class="logo-icon">🍽</div>
+            <span class="logo-text">Savor</span>
+          </a>
+          <p>Farm-to-table dining crafted with passion, sourced with purpose, and served with heart.</p>
+          <div class="footer-socials">
+            <a class="social-btn" href="#" aria-label="Instagram">📷</a>
+            <a class="social-btn" href="#" aria-label="Facebook">👥</a>
+            <a class="social-btn" href="#" aria-label="Twitter">🐦</a>
+            <a class="social-btn" href="#" aria-label="TikTok">🎵</a>
+          </div>
+        </div>
+        <nav aria-label="Menu navigation">
+          <div class="footer-heading">Explore</div>
+          <ul class="footer-links">
+            <li><a href="index.html" class="footer-link">Home</a></li>
+            <li><a href="menu.html" class="footer-link">Our Menu</a></li>
+            <li><a href="order.html" class="footer-link">Order Online</a></li>
+            <li><a href="contact.html" class="footer-link">Contact</a></li>
+          </ul>
+        </nav>
+        <nav aria-label="Dining navigation">
+          <div class="footer-heading">Dining</div>
+          <ul class="footer-links">
+            <li><a href="contact.html" class="footer-link">Reservations</a></li>
+            <li><a href="#" class="footer-link">Private Events</a></li>
+            <li><a href="#" class="footer-link">Gift Cards</a></li>
+            <li><a href="#" class="footer-link">Catering</a></li>
+          </ul>
+        </nav>
+        <nav aria-label="Company navigation">
+          <div class="footer-heading">Company</div>
+          <ul class="footer-links">
+            <li><a href="index.html" class="footer-link">Our Story</a></li>
+            <li><a href="#" class="footer-link">Sustainability</a></li>
+            <li><a href="#" class="footer-link">Careers</a></li>
+            <li><a href="#" class="footer-link">Press</a></li>
+          </ul>
+        </nav>
+      </div>
+      <div class="footer-bottom">
+        <span>© 2025 Savor Restaurant. All rights reserved.</span>
+        <span>124 Harvest Lane · Downtown · (415) 555-0182</span>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+  <script>
+    // Populate payment summary on step 3
+    function updatePaymentSummary() {
+      const el = document.getElementById('paymentCartSummary');
+      if (!el) return;
+      if (cart.items.length === 0) {
+        el.innerHTML = '<p>No items in cart</p>';
+        return;
+      }
+      const items = cart.items.map(i =>
+        `<div style="display:flex;justify-content:space-between;padding:4px 0;">
+          <span>${i.name} × ${i.qty}</span>
+          <span style="color:var(--color-text);">$${(i.price * i.qty).toFixed(2)}</span>
+        </div>`
+      ).join('');
+      const delivery = window.deliveryMode === 'pickup' ? 'Free' : `$${cart.delivery.toFixed(2)}`;
+      el.innerHTML = items + `
+        <hr style="border-color:var(--color-border);margin:12px 0;">
+        <div style="display:flex;justify-content:space-between;font-weight:700;font-size:1rem;">
+          <span style="color:var(--color-text);">Total</span>
+          <span style="color:var(--color-primary-light);">$${cart.total.toFixed(2)}</span>
+        </div>`;
+    }
+
+    // Patch goToStep to also update payment summary
+    const _origGoToStep = goToStep;
+    goToStep = function(step) {
+      _origGoToStep(step);
+      if (step === 3) updatePaymentSummary();
+    };
+  </script>
+</body>
+</html>

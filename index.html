@@ -1,0 +1,354 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Savor — A modern farm-to-table restaurant in the heart of the city. Experience seasonal cuisine crafted with the finest local ingredients.">
+  <title>Savor — Modern Farm-to-Table Restaurant</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body data-page="home">
+
+  <!-- ── Navigation ── -->
+  <nav class="navbar" role="navigation" aria-label="Main navigation">
+    <div class="navbar-inner">
+      <a href="index.html" class="navbar-logo" aria-label="Savor home">
+        <div class="logo-icon" aria-hidden="true">🍽</div>
+        <span class="logo-text">Savor</span>
+      </a>
+
+      <ul class="navbar-nav" role="list">
+        <li><a href="index.html" class="nav-link active" aria-current="page">Home</a></li>
+        <li><a href="menu.html" class="nav-link">Menu</a></li>
+        <li><a href="contact.html" class="nav-link">Contact</a></li>
+        <li><a href="order.html" class="nav-link">Order Now</a></li>
+      </ul>
+
+      <div class="navbar-actions">
+        <a href="order.html" class="cart-btn" aria-label="View cart">
+          🛒 Cart
+          <span class="cart-count hidden" id="cartCount" aria-live="polite">0</span>
+        </a>
+        <a href="order.html" class="btn btn-primary btn-sm">Order Now</a>
+        <button class="menu-toggle" aria-label="Toggle menu" aria-expanded="false">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+    </div>
+  </nav>
+
+  <!-- ── Hero ── -->
+  <section class="hero" aria-label="Welcome to Savor">
+    <div class="hero-bg" aria-hidden="true">
+      <img class="hero-bg-image"
+        src="https://images.unsplash.com/photo-1414235077428-338989a2e8c0?w=1600&q=80&auto=format&fit=crop"
+        alt="" loading="eager">
+      <div class="hero-bg-gradient"></div>
+    </div>
+    <div class="hero-orbs" aria-hidden="true">
+      <div class="orb orb-1"></div>
+      <div class="orb orb-2"></div>
+      <div class="orb orb-3"></div>
+    </div>
+
+    <div class="container">
+      <div class="hero-content">
+        <div class="badge">✦ Now Open — Downtown Location</div>
+        <h1>Where Every Bite<br>Tells a <span class="text-gradient">Story</span></h1>
+        <p>Farm-to-table cuisine crafted from locally sourced ingredients. Experience seasonal flavors in a stunning, modern setting.</p>
+        <div class="hero-actions">
+          <a href="menu.html" class="btn btn-primary btn-lg">Explore Our Menu</a>
+          <a href="order.html" class="btn btn-outline btn-lg">Order Online</a>
+        </div>
+
+        <div class="hero-stats" role="list">
+          <div class="stat-item" role="listitem">
+            <span class="stat-value">4.9★</span>
+            <span class="stat-label">Average Rating</span>
+          </div>
+          <div class="stat-item" role="listitem">
+            <span class="stat-value">2,400+</span>
+            <span class="stat-label">Happy Guests / Month</span>
+          </div>
+          <div class="stat-item" role="listitem">
+            <span class="stat-value">100%</span>
+            <span class="stat-label">Locally Sourced</span>
+          </div>
+          <div class="stat-item" role="listitem">
+            <span class="stat-value">8 yrs</span>
+            <span class="stat-label">In Business</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ── Features / Pillars ── -->
+  <section class="section" aria-labelledby="features-heading">
+    <div class="container">
+      <div class="section-header">
+        <div class="badge">Why Savor</div>
+        <h2 id="features-heading">Crafted with <span class="text-gradient">Purpose</span></h2>
+        <p>From farm partnerships to every plating decision, we obsess over the details so you can simply enjoy.</p>
+      </div>
+      <div class="features-grid">
+        <article class="feature-card">
+          <div class="feature-icon" aria-hidden="true">🌿</div>
+          <h3>Farm-to-Table</h3>
+          <p>Every ingredient is sourced within 100 miles. We partner with 12 local farms to bring you the freshest seasonal produce every single week.</p>
+        </article>
+        <article class="feature-card">
+          <div class="feature-icon" aria-hidden="true">👨‍🍳</div>
+          <h3>Artisan Craft</h3>
+          <p>Our Executive Chef Marco Rivera brings 18 years of culinary excellence from Michelin-starred kitchens in New York and Barcelona.</p>
+        </article>
+        <article class="feature-card">
+          <div class="feature-icon" aria-hidden="true">🍷</div>
+          <h3>Curated Wine List</h3>
+          <p>Over 120 wines thoughtfully selected by our sommelier to perfectly complement every dish on our seasonal menu.</p>
+        </article>
+        <article class="feature-card">
+          <div class="feature-icon" aria-hidden="true">♻️</div>
+          <h3>Sustainable Dining</h3>
+          <p>Zero-waste kitchen practices, compostable packaging, and a commitment to reducing our carbon footprint by 60% by 2026.</p>
+        </article>
+        <article class="feature-card">
+          <div class="feature-icon" aria-hidden="true">🎉</div>
+          <h3>Private Events</h3>
+          <p>Host your next celebration in our stunning private dining room accommodating up to 40 guests with bespoke menus.</p>
+        </article>
+        <article class="feature-card">
+          <div class="feature-icon" aria-hidden="true">📱</div>
+          <h3>Easy Online Orders</h3>
+          <p>Order pickup or delivery in minutes. Real-time tracking so you always know when your meal will arrive.</p>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- ── Our Story ── -->
+  <section class="section" id="story" style="background: var(--color-surface);" aria-labelledby="story-heading">
+    <div class="container">
+      <div class="story-grid">
+        <div class="story-images" aria-hidden="true">
+          <img class="story-img-main"
+            src="https://images.unsplash.com/photo-1600565193348-f74bd3c7ccdf?w=800&q=80&auto=format&fit=crop"
+            alt="Chef preparing food in kitchen" loading="lazy">
+          <img class="story-img-accent"
+            src="https://images.unsplash.com/photo-1547592180-85f173990554?w=600&q=80&auto=format&fit=crop"
+            alt="Beautiful plated dish" loading="lazy">
+        </div>
+        <div class="story-content">
+          <div class="badge">Our Story</div>
+          <h2 id="story-heading">A Passion Born in a <span class="text-gradient">Family Kitchen</span></h2>
+          <p>In 2016, Chef Marco Rivera returned to his hometown with one mission: to create a restaurant that felt both world-class and genuinely local. What started as a 30-seat neighborhood bistro has grown into a beloved institution.</p>
+          <p>We believe exceptional food starts long before it reaches the plate. That's why we're out at the farmers' market every Thursday morning, forging relationships with the people who grow what we cook.</p>
+          <div class="story-tags">
+            <div class="story-tag"><span>🏆</span> James Beard Nominee 2023</div>
+            <div class="story-tag"><span>🌱</span> Certified Sustainable</div>
+            <div class="story-tag"><span>🌟</span> Best Restaurant — City Awards</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ── Featured Dishes ── -->
+  <section class="section" aria-labelledby="dishes-heading">
+    <div class="container">
+      <div class="section-header">
+        <div class="badge">From the Kitchen</div>
+        <h2 id="dishes-heading">Guest <span class="text-gradient">Favorites</span></h2>
+        <p>Our most-loved dishes, each one a testament to seasonal ingredients and culinary craftsmanship.</p>
+      </div>
+
+      <div class="dishes-grid">
+        <article class="dish-card">
+          <div class="dish-img-wrap">
+            <img src="https://images.unsplash.com/photo-1555396273-367ea4eb4db5?w=600&q=80&auto=format&fit=crop"
+              alt="Pan-seared salmon with seasonal vegetables" loading="lazy">
+            <span class="dish-tag">Chef's Pick</span>
+          </div>
+          <div class="dish-info">
+            <h3>Pan-Seared Wild Salmon</h3>
+            <p>Cedar-plank salmon with lemon beurre blanc, roasted asparagus, and herb-crushed fingerling potatoes.</p>
+            <div class="dish-meta">
+              <span class="dish-price">$34</span>
+              <span class="dish-rating">★ 4.9 <span style="color:var(--color-text-muted); font-weight:400">(241)</span></span>
+            </div>
+          </div>
+        </article>
+
+        <article class="dish-card">
+          <div class="dish-img-wrap">
+            <img src="https://images.unsplash.com/photo-1544025162-d76694265947?w=600&q=80&auto=format&fit=crop"
+              alt="Braised short rib with root vegetables" loading="lazy">
+            <span class="dish-tag">Most Loved</span>
+          </div>
+          <div class="dish-info">
+            <h3>Braised Short Rib</h3>
+            <p>48-hour red wine braised short rib, truffle whipped potato, roasted root vegetables, crispy shallots.</p>
+            <div class="dish-meta">
+              <span class="dish-price">$42</span>
+              <span class="dish-rating">★ 5.0 <span style="color:var(--color-text-muted); font-weight:400">(318)</span></span>
+            </div>
+          </div>
+        </article>
+
+        <article class="dish-card">
+          <div class="dish-img-wrap">
+            <img src="https://images.unsplash.com/photo-1621996346565-e3dbc646d9a9?w=600&q=80&auto=format&fit=crop"
+              alt="Burrata with heirloom tomatoes" loading="lazy">
+            <span class="dish-tag">Seasonal</span>
+          </div>
+          <div class="dish-info">
+            <h3>Heirloom Burrata</h3>
+            <p>Creamy burrata with heirloom tomatoes, fresh basil, aged balsamic reduction, and fleur de sel.</p>
+            <div class="dish-meta">
+              <span class="dish-price">$18</span>
+              <span class="dish-rating">★ 4.8 <span style="color:var(--color-text-muted); font-weight:400">(192)</span></span>
+            </div>
+          </div>
+        </article>
+      </div>
+
+      <div class="text-center mt-40">
+        <a href="menu.html" class="btn btn-outline btn-lg">View Full Menu →</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ── Reviews ── -->
+  <section class="section testimonials-section" aria-labelledby="reviews-heading">
+    <div class="container">
+      <div class="section-header">
+        <div class="badge">Guest Reviews</div>
+        <h2 id="reviews-heading">What People Are <span class="text-gradient">Saying</span></h2>
+        <p>Don't just take our word for it — here's what our guests have to say.</p>
+      </div>
+
+      <div class="reviews-grid">
+        <article class="review-card">
+          <div class="review-stars" aria-label="5 stars">★★★★★</div>
+          <p class="review-text">"The braised short rib was the best thing I've eaten this year, without question. The atmosphere is gorgeous — dark, intimate, modern. We'll be back for every anniversary."</p>
+          <div class="review-author">
+            <img class="review-avatar"
+              src="https://images.unsplash.com/photo-1438761681033-6461ffad8d80?w=100&h=100&q=80&auto=format&fit=crop&crop=face"
+              alt="Sarah M." loading="lazy">
+            <div>
+              <div class="review-name">Sarah M.</div>
+              <div class="review-date">March 2025 · Verified Guest</div>
+            </div>
+          </div>
+        </article>
+
+        <article class="review-card">
+          <div class="review-stars" aria-label="5 stars">★★★★★</div>
+          <p class="review-text">"Took my team here for a business dinner and they are STILL talking about it. The salmon was incredible, the wine pairing was spot on, and the service was impeccable."</p>
+          <div class="review-author">
+            <img class="review-avatar"
+              src="https://images.unsplash.com/photo-1500648767791-00dcc994a43e?w=100&h=100&q=80&auto=format&fit=crop&crop=face"
+              alt="David K." loading="lazy">
+            <div>
+              <div class="review-name">David K.</div>
+              <div class="review-date">February 2025 · Verified Guest</div>
+            </div>
+          </div>
+        </article>
+
+        <article class="review-card">
+          <div class="review-stars" aria-label="5 stars">★★★★★</div>
+          <p class="review-text">"As someone who follows a plant-based diet, I'm blown away that Savor has so many genuinely creative and delicious options. The mushroom Wellington absolutely stole the show."</p>
+          <div class="review-author">
+            <img class="review-avatar"
+              src="https://images.unsplash.com/photo-1494790108755-2616b612b47c?w=100&h=100&q=80&auto=format&fit=crop&crop=face"
+              alt="Priya R." loading="lazy">
+            <div>
+              <div class="review-name">Priya R.</div>
+              <div class="review-date">January 2025 · Verified Guest</div>
+            </div>
+          </div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- ── CTA Banner ── -->
+  <section class="section-sm" aria-labelledby="cta-heading">
+    <div class="cta-banner">
+      <div class="cta-banner-text">
+        <h2 id="cta-heading">Ready to Experience Savor?</h2>
+        <p>Book a table for tonight or order your favorites for delivery in 30 minutes.</p>
+      </div>
+      <div class="cta-banner-actions">
+        <a href="contact.html" class="btn btn-white btn-lg">Reserve a Table</a>
+        <a href="order.html" class="btn btn-outline btn-lg" style="border-color: rgba(255,255,255,0.4); color: white;">Order Online</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ── Footer ── -->
+  <footer class="footer" role="contentinfo">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <a href="index.html" class="navbar-logo" style="font-size:1.3rem;">
+            <div class="logo-icon">🍽</div>
+            <span class="logo-text">Savor</span>
+          </a>
+          <p>Farm-to-table dining crafted with passion, sourced with purpose, and served with heart.</p>
+          <div class="footer-socials">
+            <a class="social-btn" href="#" aria-label="Instagram">📷</a>
+            <a class="social-btn" href="#" aria-label="Facebook">👥</a>
+            <a class="social-btn" href="#" aria-label="Twitter">🐦</a>
+            <a class="social-btn" href="#" aria-label="TikTok">🎵</a>
+          </div>
+        </div>
+
+        <nav aria-label="Menu navigation">
+          <div class="footer-heading">Explore</div>
+          <ul class="footer-links">
+            <li><a href="index.html" class="footer-link">Home</a></li>
+            <li><a href="menu.html" class="footer-link">Our Menu</a></li>
+            <li><a href="order.html" class="footer-link">Order Online</a></li>
+            <li><a href="contact.html" class="footer-link">Contact</a></li>
+          </ul>
+        </nav>
+
+        <nav aria-label="Dining navigation">
+          <div class="footer-heading">Dining</div>
+          <ul class="footer-links">
+            <li><a href="contact.html" class="footer-link">Reservations</a></li>
+            <li><a href="#" class="footer-link">Private Events</a></li>
+            <li><a href="#" class="footer-link">Gift Cards</a></li>
+            <li><a href="#" class="footer-link">Catering</a></li>
+          </ul>
+        </nav>
+
+        <nav aria-label="Company navigation">
+          <div class="footer-heading">Company</div>
+          <ul class="footer-links">
+            <li><a href="index.html#story" class="footer-link">Our Story</a></li>
+            <li><a href="#" class="footer-link">Sustainability</a></li>
+            <li><a href="#" class="footer-link">Careers</a></li>
+            <li><a href="#" class="footer-link">Press</a></li>
+          </ul>
+        </nav>
+      </div>
+
+      <div class="footer-bottom">
+        <span>© 2025 Savor Restaurant. All rights reserved.</span>
+        <span>124 Harvest Lane · Downtown · (415) 555-0182</span>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Cart Badge Sync -->
+  <span class="cart-count hidden" style="display:none;" aria-live="polite"></span>
+
+  <script src="js/main.js"></script>
+</body>
+</html>

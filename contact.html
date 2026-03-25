@@ -1,0 +1,304 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Contact Savor Restaurant — Make a reservation, ask a question, or find our location. Open Tuesday through Sunday.">
+  <title>Contact — Savor Restaurant</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body data-page="contact">
+
+  <!-- ── Navigation ── -->
+  <nav class="navbar" role="navigation" aria-label="Main navigation">
+    <div class="navbar-inner">
+      <a href="index.html" class="navbar-logo" aria-label="Savor home">
+        <div class="logo-icon" aria-hidden="true">🍽</div>
+        <span class="logo-text">Savor</span>
+      </a>
+
+      <ul class="navbar-nav" role="list">
+        <li><a href="index.html" class="nav-link">Home</a></li>
+        <li><a href="menu.html" class="nav-link">Menu</a></li>
+        <li><a href="contact.html" class="nav-link active" aria-current="page">Contact</a></li>
+        <li><a href="order.html" class="nav-link">Order Now</a></li>
+      </ul>
+
+      <div class="navbar-actions">
+        <a href="order.html" class="cart-btn" aria-label="View cart">
+          🛒 Cart
+          <span class="cart-count hidden" aria-live="polite">0</span>
+        </a>
+        <a href="order.html" class="btn btn-primary btn-sm">Order Now</a>
+        <button class="menu-toggle" aria-label="Toggle menu" aria-expanded="false">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+    </div>
+  </nav>
+
+  <!-- ── Page Hero ── -->
+  <section class="page-hero">
+    <div class="page-hero-bg" aria-hidden="true"></div>
+    <div class="container">
+      <div class="badge">Get in Touch</div>
+      <h1>Contact <span class="text-gradient">Us</span></h1>
+      <p>Make a reservation, ask a question, or just say hello. We'd love to hear from you.</p>
+    </div>
+  </section>
+
+  <!-- ── Contact Content ── -->
+  <section class="section-sm" aria-label="Contact information and form">
+    <div class="container">
+      <div class="contact-grid">
+
+        <!-- Left: Info Cards -->
+        <aside aria-label="Contact details">
+          <div class="contact-info">
+
+            <div class="contact-info-card">
+              <div class="contact-icon" aria-hidden="true">📍</div>
+              <div class="contact-info-text">
+                <h4>Our Location</h4>
+                <p>124 Harvest Lane<br>Downtown District<br>San Francisco, CA 94105</p>
+              </div>
+            </div>
+
+            <div class="contact-info-card">
+              <div class="contact-icon" aria-hidden="true">📞</div>
+              <div class="contact-info-text">
+                <h4>Phone</h4>
+                <p><a href="tel:+14155550182" style="color:var(--color-primary-light)">(415) 555-0182</a><br>
+                For reservations or inquiries</p>
+              </div>
+            </div>
+
+            <div class="contact-info-card">
+              <div class="contact-icon" aria-hidden="true">✉️</div>
+              <div class="contact-info-text">
+                <h4>Email</h4>
+                <p><a href="mailto:hello@savorrestaurant.com" style="color:var(--color-primary-light)">hello@savorrestaurant.com</a><br>
+                We respond within 24 hours</p>
+              </div>
+            </div>
+
+            <!-- Hours -->
+            <div class="contact-hours">
+              <h4><span aria-hidden="true">🕐</span> Hours of Operation</h4>
+              <div class="hours-list" role="list">
+                <div class="hours-row" role="listitem">
+                  <span class="hours-day">Monday</span>
+                  <span class="hours-time" style="color:var(--color-text-muted)">Closed</span>
+                </div>
+                <div class="hours-row" role="listitem">
+                  <span class="hours-day">Tuesday – Thursday</span>
+                  <span class="hours-time">5:00 PM – 10:00 PM</span>
+                </div>
+                <div class="hours-row" role="listitem">
+                  <span class="hours-day">Friday – Saturday</span>
+                  <span class="hours-time">5:00 PM – 11:00 PM</span>
+                </div>
+                <div class="hours-row" role="listitem">
+                  <span class="hours-day">Sunday</span>
+                  <span class="hours-time">11:00 AM – 9:00 PM</span>
+                </div>
+                <div class="hours-row" role="listitem">
+                  <span class="hours-day">Sunday Brunch</span>
+                  <span class="hours-time">11:00 AM – 3:00 PM</span>
+                </div>
+              </div>
+            </div>
+
+          </div>
+
+          <!-- Map placeholder -->
+          <div class="map-placeholder" aria-label="Map showing restaurant location">
+            <img src="https://images.unsplash.com/photo-1477959858617-67f85cf4f1df?w=800&q=80&auto=format&fit=crop"
+              alt="City map view" loading="lazy">
+            <div class="map-placeholder-overlay">
+              <span aria-hidden="true">📍</span>
+              <p>124 Harvest Lane, SF</p>
+            </div>
+          </div>
+        </aside>
+
+        <!-- Right: Contact Form -->
+        <div class="contact-form-wrap" role="main">
+          <h3>Send Us a Message</h3>
+          <p>Fill out the form below and we'll get back to you as soon as possible.</p>
+
+          <form id="contactForm" novalidate aria-label="Contact form">
+            <div class="form-row">
+              <div class="form-group">
+                <label for="firstName">First Name <span aria-hidden="true" style="color:#ef4444;">*</span></label>
+                <input type="text" id="firstName" name="firstName" placeholder="Jane" required autocomplete="given-name">
+              </div>
+              <div class="form-group">
+                <label for="lastName">Last Name <span aria-hidden="true" style="color:#ef4444;">*</span></label>
+                <input type="text" id="lastName" name="lastName" placeholder="Doe" required autocomplete="family-name">
+              </div>
+            </div>
+
+            <div class="form-row">
+              <div class="form-group">
+                <label for="email">Email Address <span aria-hidden="true" style="color:#ef4444;">*</span></label>
+                <input type="email" id="email" name="email" placeholder="jane@example.com" required autocomplete="email">
+              </div>
+              <div class="form-group">
+                <label for="phone">Phone Number</label>
+                <input type="tel" id="phone" name="phone" placeholder="(415) 555-0100" autocomplete="tel">
+              </div>
+            </div>
+
+            <div class="form-group">
+              <label for="subject">Subject <span aria-hidden="true" style="color:#ef4444;">*</span></label>
+              <select id="subject" name="subject" required>
+                <option value="" disabled selected>Select a topic...</option>
+                <option value="reservation">Make a Reservation</option>
+                <option value="private-event">Private Event / Large Party</option>
+                <option value="catering">Catering Inquiry</option>
+                <option value="feedback">Feedback / Review</option>
+                <option value="press">Press &amp; Media</option>
+                <option value="other">Other</option>
+              </select>
+            </div>
+
+            <div class="form-group">
+              <label for="partySize">Party Size (for reservations)</label>
+              <select id="partySize" name="partySize">
+                <option value="" disabled selected>Select party size...</option>
+                <option value="1">1 person</option>
+                <option value="2">2 people</option>
+                <option value="3-4">3–4 people</option>
+                <option value="5-6">5–6 people</option>
+                <option value="7-10">7–10 people</option>
+                <option value="10+">10+ people</option>
+              </select>
+            </div>
+
+            <div class="form-row">
+              <div class="form-group">
+                <label for="preferredDate">Preferred Date</label>
+                <input type="date" id="preferredDate" name="preferredDate">
+              </div>
+              <div class="form-group">
+                <label for="preferredTime">Preferred Time</label>
+                <select id="preferredTime" name="preferredTime">
+                  <option value="" disabled selected>Select time...</option>
+                  <option>5:00 PM</option>
+                  <option>5:30 PM</option>
+                  <option>6:00 PM</option>
+                  <option>6:30 PM</option>
+                  <option>7:00 PM</option>
+                  <option>7:30 PM</option>
+                  <option>8:00 PM</option>
+                  <option>8:30 PM</option>
+                  <option>9:00 PM</option>
+                </select>
+              </div>
+            </div>
+
+            <div class="form-group">
+              <label for="message">Message <span aria-hidden="true" style="color:#ef4444;">*</span></label>
+              <textarea id="message" name="message" rows="4"
+                placeholder="Tell us more — any special requests, dietary needs, or celebration details..." required></textarea>
+            </div>
+
+            <button type="submit" class="btn btn-primary" style="width:100%; justify-content:center; font-size:1rem;">
+              Send Message →
+            </button>
+          </form>
+
+          <!-- Success state -->
+          <div id="formSuccess" class="form-success" aria-live="polite">
+            <div class="success-icon" aria-hidden="true">🎉</div>
+            <h3>Message Sent!</h3>
+            <p>Thank you for reaching out. We'll be in touch within 24 hours.</p>
+            <a href="index.html" class="btn btn-primary mt-24">Back to Home</a>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ── Private Events Banner ── -->
+  <section class="section-sm" aria-label="Private events">
+    <div class="cta-banner">
+      <div class="cta-banner-text">
+        <h2>Hosting a Special Event?</h2>
+        <p>Our private dining room accommodates up to 40 guests with custom menus and full-service catering.</p>
+      </div>
+      <div class="cta-banner-actions">
+        <a href="#contactForm" class="btn btn-white btn-lg">Inquire Now</a>
+        <a href="menu.html" class="btn btn-outline btn-lg" style="border-color: rgba(255,255,255,0.4); color: white;">View Menu</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ── Footer ── -->
+  <footer class="footer" role="contentinfo">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <a href="index.html" class="navbar-logo" style="font-size:1.3rem;">
+            <div class="logo-icon">🍽</div>
+            <span class="logo-text">Savor</span>
+          </a>
+          <p>Farm-to-table dining crafted with passion, sourced with purpose, and served with heart.</p>
+          <div class="footer-socials">
+            <a class="social-btn" href="#" aria-label="Instagram">📷</a>
+            <a class="social-btn" href="#" aria-label="Facebook">👥</a>
+            <a class="social-btn" href="#" aria-label="Twitter">🐦</a>
+            <a class="social-btn" href="#" aria-label="TikTok">🎵</a>
+          </div>
+        </div>
+        <nav aria-label="Menu navigation">
+          <div class="footer-heading">Explore</div>
+          <ul class="footer-links">
+            <li><a href="index.html" class="footer-link">Home</a></li>
+            <li><a href="menu.html" class="footer-link">Our Menu</a></li>
+            <li><a href="order.html" class="footer-link">Order Online</a></li>
+            <li><a href="contact.html" class="footer-link">Contact</a></li>
+          </ul>
+        </nav>
+        <nav aria-label="Dining navigation">
+          <div class="footer-heading">Dining</div>
+          <ul class="footer-links">
+            <li><a href="contact.html" class="footer-link">Reservations</a></li>
+            <li><a href="#" class="footer-link">Private Events</a></li>
+            <li><a href="#" class="footer-link">Gift Cards</a></li>
+            <li><a href="#" class="footer-link">Catering</a></li>
+          </ul>
+        </nav>
+        <nav aria-label="Company navigation">
+          <div class="footer-heading">Company</div>
+          <ul class="footer-links">
+            <li><a href="index.html" class="footer-link">Our Story</a></li>
+            <li><a href="#" class="footer-link">Sustainability</a></li>
+            <li><a href="#" class="footer-link">Careers</a></li>
+            <li><a href="#" class="footer-link">Press</a></li>
+          </ul>
+        </nav>
+      </div>
+      <div class="footer-bottom">
+        <span>© 2025 Savor Restaurant. All rights reserved.</span>
+        <span>124 Harvest Lane · Downtown · (415) 555-0182</span>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+  <script>
+    // Set minimum date for reservation to today
+    const dateInput = document.getElementById('preferredDate');
+    if (dateInput) {
+      const today = new Date().toISOString().split('T')[0];
+      dateInput.min = today;
+    }
+  </script>
+</body>
+</html>

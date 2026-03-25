@@ -1,0 +1,621 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Savor Restaurant Menu — Starters, mains, desserts, and drinks. Farm-to-table cuisine crafted with seasonal local ingredients.">
+  <title>Menu — Savor Restaurant</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body data-page="menu">
+
+  <!-- ── Navigation ── -->
+  <nav class="navbar" role="navigation" aria-label="Main navigation">
+    <div class="navbar-inner">
+      <a href="index.html" class="navbar-logo" aria-label="Savor home">
+        <div class="logo-icon" aria-hidden="true">🍽</div>
+        <span class="logo-text">Savor</span>
+      </a>
+
+      <ul class="navbar-nav" role="list">
+        <li><a href="index.html" class="nav-link">Home</a></li>
+        <li><a href="menu.html" class="nav-link active" aria-current="page">Menu</a></li>
+        <li><a href="contact.html" class="nav-link">Contact</a></li>
+        <li><a href="order.html" class="nav-link">Order Now</a></li>
+      </ul>
+
+      <div class="navbar-actions">
+        <a href="order.html" class="cart-btn" aria-label="View cart">
+          🛒 Cart
+          <span class="cart-count hidden" aria-live="polite">0</span>
+        </a>
+        <a href="order.html" class="btn btn-primary btn-sm">Order Now</a>
+        <button class="menu-toggle" aria-label="Toggle menu" aria-expanded="false">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+    </div>
+  </nav>
+
+  <!-- ── Page Hero ── -->
+  <section class="page-hero">
+    <div class="page-hero-bg" aria-hidden="true"></div>
+    <div class="container">
+      <div class="badge">Seasonal Menu</div>
+      <h1>Our <span class="text-gradient">Menu</span></h1>
+      <p>Every dish is prepared fresh daily using seasonal, locally sourced ingredients. Menu changes weekly to reflect the finest available produce.</p>
+    </div>
+  </section>
+
+  <!-- ── Menu Content ── -->
+  <section class="section-sm" aria-label="Menu">
+    <div class="container">
+
+      <!-- Filter Bar -->
+      <div class="menu-filter-bar" role="tablist" aria-label="Menu categories">
+        <button class="filter-btn active" data-filter="all" role="tab" aria-selected="true">All Items</button>
+        <button class="filter-btn" data-filter="starter" role="tab" aria-selected="false">Starters</button>
+        <button class="filter-btn" data-filter="main" role="tab" aria-selected="false">Mains</button>
+        <button class="filter-btn" data-filter="pasta" role="tab" aria-selected="false">Pasta &amp; Risotto</button>
+        <button class="filter-btn" data-filter="dessert" role="tab" aria-selected="false">Desserts</button>
+        <button class="filter-btn" data-filter="drinks" role="tab" aria-selected="false">Drinks</button>
+      </div>
+
+      <!-- ── STARTERS ── -->
+      <div class="menu-section" data-section="starter">
+        <h2 class="menu-section-title"><span aria-hidden="true">🥗</span> Starters &amp; Small Plates</h2>
+        <div class="menu-grid">
+
+          <article class="menu-item" data-category="starter">
+            <div class="menu-item-img">
+              <img src="https://images.unsplash.com/photo-1621996346565-e3dbc646d9a9?w=600&q=80&auto=format&fit=crop"
+                alt="Heirloom Burrata" loading="lazy">
+              <div class="menu-item-badges">
+                <span class="badge-tag badge-popular">Popular</span>
+                <span class="badge-tag badge-vegan">Veg</span>
+              </div>
+            </div>
+            <div class="menu-item-body">
+              <h3>Heirloom Burrata</h3>
+              <p>Creamy burrata, heirloom tomatoes, fresh basil, aged balsamic reduction, fleur de sel, and EVOO.</p>
+              <div class="menu-item-footer">
+                <span class="menu-item-price">$18</span>
+                <button class="add-to-order-btn"
+                  data-id="starter-1" data-name="Heirloom Burrata" data-price="18"
+                  data-img="https://images.unsplash.com/photo-1621996346565-e3dbc646d9a9?w=200&q=80&auto=format&fit=crop"
+                  aria-label="Add Heirloom Burrata to order">
+                  + Add to Order
+                </button>
+              </div>
+            </div>
+          </article>
+
+          <article class="menu-item" data-category="starter">
+            <div class="menu-item-img">
+              <img src="https://images.unsplash.com/photo-1578020190125-f4f7c18bc9cb?w=600&q=80&auto=format&fit=crop"
+                alt="Tuna Tartare" loading="lazy">
+              <div class="menu-item-badges">
+                <span class="badge-tag badge-new">New</span>
+                <span class="badge-tag badge-gf">GF</span>
+              </div>
+            </div>
+            <div class="menu-item-body">
+              <h3>Ahi Tuna Tartare</h3>
+              <p>Sushi-grade ahi tuna, avocado mousse, sesame-ginger vinaigrette, crispy wonton, micro greens.</p>
+              <div class="menu-item-footer">
+                <span class="menu-item-price">$22</span>
+                <button class="add-to-order-btn"
+                  data-id="starter-2" data-name="Ahi Tuna Tartare" data-price="22"
+                  data-img="https://images.unsplash.com/photo-1578020190125-f4f7c18bc9cb?w=200&q=80&auto=format&fit=crop"
+                  aria-label="Add Ahi Tuna Tartare to order">
+                  + Add to Order
+                </button>
+              </div>
+            </div>
+          </article>
+
+          <article class="menu-item" data-category="starter">
+            <div class="menu-item-img">
+              <img src="https://images.unsplash.com/photo-1547592180-85f173990554?w=600&q=80&auto=format&fit=crop"
+                alt="Mushroom Bisque" loading="lazy">
+              <div class="menu-item-badges">
+                <span class="badge-tag badge-vegan">Vegan</span>
+              </div>
+            </div>
+            <div class="menu-item-body">
+              <h3>Wild Mushroom Bisque</h3>
+              <p>Earthy blend of porcini and cremini mushrooms, truffle oil, fresh thyme, with a toasted brioche crouton.</p>
+              <div class="menu-item-footer">
+                <span class="menu-item-price">$14</span>
+                <button class="add-to-order-btn"
+                  data-id="starter-3" data-name="Wild Mushroom Bisque" data-price="14"
+                  data-img="https://images.unsplash.com/photo-1547592180-85f173990554?w=200&q=80&auto=format&fit=crop"
+                  aria-label="Add Wild Mushroom Bisque to order">
+                  + Add to Order
+                </button>
+              </div>
+            </div>
+          </article>
+
+          <article class="menu-item" data-category="starter">
+            <div class="menu-item-img">
+              <img src="https://images.unsplash.com/photo-1555244162-803834f70033?w=600&q=80&auto=format&fit=crop"
+                alt="Charcuterie Board" loading="lazy">
+              <div class="menu-item-badges">
+                <span class="badge-tag badge-popular">Popular</span>
+              </div>
+            </div>
+            <div class="menu-item-body">
+              <h3>Artisan Charcuterie Board</h3>
+              <p>House-cured meats, artisan cheeses, seasonal preserves, honeycomb, marcona almonds, and grilled bread.</p>
+              <div class="menu-item-footer">
+                <span class="menu-item-price">$28</span>
+                <button class="add-to-order-btn"
+                  data-id="starter-4" data-name="Artisan Charcuterie Board" data-price="28"
+                  data-img="https://images.unsplash.com/photo-1555244162-803834f70033?w=200&q=80&auto=format&fit=crop"
+                  aria-label="Add Artisan Charcuterie Board to order">
+                  + Add to Order
+                </button>
+              </div>
+            </div>
+          </article>
+
+        </div>
+      </div>
+
+      <!-- ── MAINS ── -->
+      <div class="menu-section" data-section="main">
+        <h2 class="menu-section-title"><span aria-hidden="true">🍽</span> Main Courses</h2>
+        <div class="menu-grid">
+
+          <article class="menu-item" data-category="main">
+            <div class="menu-item-img">
+              <img src="https://images.unsplash.com/photo-1555396273-367ea4eb4db5?w=600&q=80&auto=format&fit=crop"
+                alt="Pan-seared Wild Salmon" loading="lazy">
+              <div class="menu-item-badges">
+                <span class="badge-tag badge-popular">Chef's Pick</span>
+                <span class="badge-tag badge-gf">GF</span>
+              </div>
+            </div>
+            <div class="menu-item-body">
+              <h3>Pan-Seared Wild Salmon</h3>
+              <p>Cedar-plank salmon, lemon beurre blanc, roasted asparagus, herb-crushed fingerling potatoes, dill oil.</p>
+              <div class="menu-item-footer">
+                <span class="menu-item-price">$34</span>
+                <button class="add-to-order-btn"
+                  data-id="main-1" data-name="Pan-Seared Wild Salmon" data-price="34"
+                  data-img="https://images.unsplash.com/photo-1555396273-367ea4eb4db5?w=200&q=80&auto=format&fit=crop"
+                  aria-label="Add Pan-Seared Wild Salmon to order">
+                  + Add to Order
+                </button>
+              </div>
+            </div>
+          </article>
+
+          <article class="menu-item" data-category="main">
+            <div class="menu-item-img">
+              <img src="https://images.unsplash.com/photo-1544025162-d76694265947?w=600&q=80&auto=format&fit=crop"
+                alt="Braised Short Rib" loading="lazy">
+              <div class="menu-item-badges">
+                <span class="badge-tag badge-popular">Most Loved</span>
+              </div>
+            </div>
+            <div class="menu-item-body">
+              <h3>Braised Short Rib</h3>
+              <p>48-hour red wine braised short rib, truffle whipped potato, roasted root vegetables, crispy shallots, jus.</p>
+              <div class="menu-item-footer">
+                <span class="menu-item-price">$42</span>
+                <button class="add-to-order-btn"
+                  data-id="main-2" data-name="Braised Short Rib" data-price="42"
+                  data-img="https://images.unsplash.com/photo-1544025162-d76694265947?w=200&q=80&auto=format&fit=crop"
+                  aria-label="Add Braised Short Rib to order">
+                  + Add to Order
+                </button>
+              </div>
+            </div>
+          </article>
+
+          <article class="menu-item" data-category="main">
+            <div class="menu-item-img">
+              <img src="https://images.unsplash.com/photo-1598515214211-89d3c73ae83b?w=600&q=80&auto=format&fit=crop"
+                alt="Duck Breast" loading="lazy">
+              <div class="menu-item-badges">
+                <span class="badge-tag badge-new">Seasonal</span>
+              </div>
+            </div>
+            <div class="menu-item-body">
+              <h3>Seared Duck Breast</h3>
+              <p>Magret duck breast, cherry gastrique, celery root puree, wilted spinach, and crispy duck confit wontons.</p>
+              <div class="menu-item-footer">
+                <span class="menu-item-price">$38</span>
+                <button class="add-to-order-btn"
+                  data-id="main-3" data-name="Seared Duck Breast" data-price="38"
+                  data-img="https://images.unsplash.com/photo-1598515214211-89d3c73ae83b?w=200&q=80&auto=format&fit=crop"
+                  aria-label="Add Seared Duck Breast to order">
+                  + Add to Order
+                </button>
+              </div>
+            </div>
+          </article>
+
+          <article class="menu-item" data-category="main">
+            <div class="menu-item-img">
+              <img src="https://images.unsplash.com/photo-1565299585323-38d6b0865b47?w=600&q=80&auto=format&fit=crop"
+                alt="Mushroom Wellington" loading="lazy">
+              <div class="menu-item-badges">
+                <span class="badge-tag badge-vegan">Vegan</span>
+                <span class="badge-tag badge-popular">Popular</span>
+              </div>
+            </div>
+            <div class="menu-item-body">
+              <h3>Mushroom Wellington</h3>
+              <p>King oyster mushroom duxelles in flaky puff pastry, red wine reduction, charred broccolini, walnut cream.</p>
+              <div class="menu-item-footer">
+                <span class="menu-item-price">$28</span>
+                <button class="add-to-order-btn"
+                  data-id="main-4" data-name="Mushroom Wellington" data-price="28"
+                  data-img="https://images.unsplash.com/photo-1565299585323-38d6b0865b47?w=200&q=80&auto=format&fit=crop"
+                  aria-label="Add Mushroom Wellington to order">
+                  + Add to Order
+                </button>
+              </div>
+            </div>
+          </article>
+
+          <article class="menu-item" data-category="main">
+            <div class="menu-item-img">
+              <img src="https://images.unsplash.com/photo-1504674900247-0877df9cc836?w=600&q=80&auto=format&fit=crop"
+                alt="Grilled Chicken" loading="lazy">
+              <div class="menu-item-badges">
+                <span class="badge-tag badge-gf">GF</span>
+              </div>
+            </div>
+            <div class="menu-item-body">
+              <h3>Herb Roasted Chicken</h3>
+              <p>Half roasted free-range chicken, lemon-herb jus, seasonal roasted vegetables, and crispy skin potatoes.</p>
+              <div class="menu-item-footer">
+                <span class="menu-item-price">$30</span>
+                <button class="add-to-order-btn"
+                  data-id="main-5" data-name="Herb Roasted Chicken" data-price="30"
+                  data-img="https://images.unsplash.com/photo-1504674900247-0877df9cc836?w=200&q=80&auto=format&fit=crop"
+                  aria-label="Add Herb Roasted Chicken to order">
+                  + Add to Order
+                </button>
+              </div>
+            </div>
+          </article>
+
+          <article class="menu-item" data-category="main">
+            <div class="menu-item-img">
+              <img src="https://images.unsplash.com/photo-1559847844-5315695dadae?w=600&q=80&auto=format&fit=crop"
+                alt="Ribeye Steak" loading="lazy">
+              <div class="menu-item-badges">
+                <span class="badge-tag badge-popular">Premium</span>
+              </div>
+            </div>
+            <div class="menu-item-body">
+              <h3>Prime Dry-Aged Ribeye</h3>
+              <p>14oz USDA Prime ribeye, compound herb butter, duck fat roasted fingerlings, and grilled broccolini.</p>
+              <div class="menu-item-footer">
+                <span class="menu-item-price">$58</span>
+                <button class="add-to-order-btn"
+                  data-id="main-6" data-name="Prime Dry-Aged Ribeye" data-price="58"
+                  data-img="https://images.unsplash.com/photo-1559847844-5315695dadae?w=200&q=80&auto=format&fit=crop"
+                  aria-label="Add Prime Dry-Aged Ribeye to order">
+                  + Add to Order
+                </button>
+              </div>
+            </div>
+          </article>
+
+        </div>
+      </div>
+
+      <!-- ── PASTA ── -->
+      <div class="menu-section" data-section="pasta">
+        <h2 class="menu-section-title"><span aria-hidden="true">🍝</span> Pasta &amp; Risotto</h2>
+        <div class="menu-grid">
+
+          <article class="menu-item" data-category="pasta">
+            <div class="menu-item-img">
+              <img src="https://images.unsplash.com/photo-1563379926898-05f4575a45d8?w=600&q=80&auto=format&fit=crop"
+                alt="Truffle Rigatoni" loading="lazy">
+              <div class="menu-item-badges">
+                <span class="badge-tag badge-popular">Popular</span>
+                <span class="badge-tag badge-vegan">Veg</span>
+              </div>
+            </div>
+            <div class="menu-item-body">
+              <h3>Black Truffle Rigatoni</h3>
+              <p>House-made rigatoni, black truffle cream sauce, aged Parmigiano-Reggiano, chives, and Périgord truffle shavings.</p>
+              <div class="menu-item-footer">
+                <span class="menu-item-price">$32</span>
+                <button class="add-to-order-btn"
+                  data-id="pasta-1" data-name="Black Truffle Rigatoni" data-price="32"
+                  data-img="https://images.unsplash.com/photo-1563379926898-05f4575a45d8?w=200&q=80&auto=format&fit=crop"
+                  aria-label="Add Black Truffle Rigatoni to order">
+                  + Add to Order
+                </button>
+              </div>
+            </div>
+          </article>
+
+          <article class="menu-item" data-category="pasta">
+            <div class="menu-item-img">
+              <img src="https://images.unsplash.com/photo-1476124369491-e7addf5db371?w=600&q=80&auto=format&fit=crop"
+                alt="Seafood Linguine" loading="lazy">
+              <div class="menu-item-badges">
+                <span class="badge-tag badge-new">New</span>
+              </div>
+            </div>
+            <div class="menu-item-body">
+              <h3>Seafood Linguine</h3>
+              <p>Wild shrimp, clams, mussels, scallops in a saffron-white wine broth with house linguine and grilled bread.</p>
+              <div class="menu-item-footer">
+                <span class="menu-item-price">$36</span>
+                <button class="add-to-order-btn"
+                  data-id="pasta-2" data-name="Seafood Linguine" data-price="36"
+                  data-img="https://images.unsplash.com/photo-1476124369491-e7addf5db371?w=200&q=80&auto=format&fit=crop"
+                  aria-label="Add Seafood Linguine to order">
+                  + Add to Order
+                </button>
+              </div>
+            </div>
+          </article>
+
+          <article class="menu-item" data-category="pasta">
+            <div class="menu-item-img">
+              <img src="https://images.unsplash.com/photo-1543339308-43e59d6b73a6?w=600&q=80&auto=format&fit=crop"
+                alt="Mushroom Risotto" loading="lazy">
+              <div class="menu-item-badges">
+                <span class="badge-tag badge-vegan">Veg</span>
+                <span class="badge-tag badge-gf">GF</span>
+              </div>
+            </div>
+            <div class="menu-item-body">
+              <h3>Porcini Mushroom Risotto</h3>
+              <p>Carnaroli rice, dried porcini, fresh cremini, white wine, mascarpone, aged Parmesan, and truffle oil.</p>
+              <div class="menu-item-footer">
+                <span class="menu-item-price">$26</span>
+                <button class="add-to-order-btn"
+                  data-id="pasta-3" data-name="Porcini Mushroom Risotto" data-price="26"
+                  data-img="https://images.unsplash.com/photo-1543339308-43e59d6b73a6?w=200&q=80&auto=format&fit=crop"
+                  aria-label="Add Porcini Mushroom Risotto to order">
+                  + Add to Order
+                </button>
+              </div>
+            </div>
+          </article>
+
+        </div>
+      </div>
+
+      <!-- ── DESSERTS ── -->
+      <div class="menu-section" data-section="dessert">
+        <h2 class="menu-section-title"><span aria-hidden="true">🍮</span> Desserts</h2>
+        <div class="menu-grid">
+
+          <article class="menu-item" data-category="dessert">
+            <div class="menu-item-img">
+              <img src="https://images.unsplash.com/photo-1578985545062-69928b1d9587?w=600&q=80&auto=format&fit=crop"
+                alt="Chocolate Lava Cake" loading="lazy">
+              <div class="menu-item-badges">
+                <span class="badge-tag badge-popular">Best Seller</span>
+              </div>
+            </div>
+            <div class="menu-item-body">
+              <h3>Dark Chocolate Lava Cake</h3>
+              <p>72% Valrhona chocolate, warm molten center, vanilla bean ice cream, raspberry coulis, and gold leaf.</p>
+              <div class="menu-item-footer">
+                <span class="menu-item-price">$14</span>
+                <button class="add-to-order-btn"
+                  data-id="dessert-1" data-name="Dark Chocolate Lava Cake" data-price="14"
+                  data-img="https://images.unsplash.com/photo-1578985545062-69928b1d9587?w=200&q=80&auto=format&fit=crop"
+                  aria-label="Add Dark Chocolate Lava Cake to order">
+                  + Add to Order
+                </button>
+              </div>
+            </div>
+          </article>
+
+          <article class="menu-item" data-category="dessert">
+            <div class="menu-item-img">
+              <img src="https://images.unsplash.com/photo-1488477181946-6428a0291777?w=600&q=80&auto=format&fit=crop"
+                alt="Crème Brûlée" loading="lazy">
+              <div class="menu-item-badges">
+                <span class="badge-tag badge-vegan">Veg</span>
+              </div>
+            </div>
+            <div class="menu-item-body">
+              <h3>Vanilla Bean Crème Brûlée</h3>
+              <p>Classic crème brûlée with Madagascar vanilla, caramelized sugar crust, and seasonal berry garnish.</p>
+              <div class="menu-item-footer">
+                <span class="menu-item-price">$12</span>
+                <button class="add-to-order-btn"
+                  data-id="dessert-2" data-name="Vanilla Bean Crème Brûlée" data-price="12"
+                  data-img="https://images.unsplash.com/photo-1488477181946-6428a0291777?w=200&q=80&auto=format&fit=crop"
+                  aria-label="Add Vanilla Bean Crème Brûlée to order">
+                  + Add to Order
+                </button>
+              </div>
+            </div>
+          </article>
+
+          <article class="menu-item" data-category="dessert">
+            <div class="menu-item-img">
+              <img src="https://images.unsplash.com/photo-1565958011703-44f9829ba187?w=600&q=80&auto=format&fit=crop"
+                alt="Seasonal Tart" loading="lazy">
+              <div class="menu-item-badges">
+                <span class="badge-tag badge-new">Seasonal</span>
+                <span class="badge-tag badge-vegan">Veg</span>
+              </div>
+            </div>
+            <div class="menu-item-body">
+              <h3>Seasonal Fruit Tart</h3>
+              <p>Almond frangipane tart with pastry cream, seasonal local fruits, apricot glaze, and toasted almonds.</p>
+              <div class="menu-item-footer">
+                <span class="menu-item-price">$11</span>
+                <button class="add-to-order-btn"
+                  data-id="dessert-3" data-name="Seasonal Fruit Tart" data-price="11"
+                  data-img="https://images.unsplash.com/photo-1565958011703-44f9829ba187?w=200&q=80&auto=format&fit=crop"
+                  aria-label="Add Seasonal Fruit Tart to order">
+                  + Add to Order
+                </button>
+              </div>
+            </div>
+          </article>
+
+        </div>
+      </div>
+
+      <!-- ── DRINKS ── -->
+      <div class="menu-section" data-section="drinks">
+        <h2 class="menu-section-title"><span aria-hidden="true">🍷</span> Drinks &amp; Cocktails</h2>
+        <div class="menu-grid">
+
+          <article class="menu-item" data-category="drinks">
+            <div class="menu-item-img">
+              <img src="https://images.unsplash.com/photo-1514362545857-3bc16c4c7d1b?w=600&q=80&auto=format&fit=crop"
+                alt="Signature Cocktail" loading="lazy">
+              <div class="menu-item-badges">
+                <span class="badge-tag badge-popular">Signature</span>
+              </div>
+            </div>
+            <div class="menu-item-body">
+              <h3>Harvest Negroni</h3>
+              <p>House-infused apple gin, Campari, sweet vermouth, rosemary, and an orange twist over a single large ice cube.</p>
+              <div class="menu-item-footer">
+                <span class="menu-item-price">$16</span>
+                <button class="add-to-order-btn"
+                  data-id="drinks-1" data-name="Harvest Negroni" data-price="16"
+                  data-img="https://images.unsplash.com/photo-1514362545857-3bc16c4c7d1b?w=200&q=80&auto=format&fit=crop"
+                  aria-label="Add Harvest Negroni to order">
+                  + Add to Order
+                </button>
+              </div>
+            </div>
+          </article>
+
+          <article class="menu-item" data-category="drinks">
+            <div class="menu-item-img">
+              <img src="https://images.unsplash.com/photo-1571950006418-f99b8b6e1e3a?w=600&q=80&auto=format&fit=crop"
+                alt="Natural Wine" loading="lazy">
+              <div class="menu-item-badges">
+                <span class="badge-tag badge-vegan">Organic</span>
+              </div>
+            </div>
+            <div class="menu-item-body">
+              <h3>Natural Wine Selection</h3>
+              <p>A rotating selection of organic, biodynamic wines by the glass. Ask your server for today's pours.</p>
+              <div class="menu-item-footer">
+                <span class="menu-item-price">$14</span>
+                <button class="add-to-order-btn"
+                  data-id="drinks-2" data-name="Natural Wine (Glass)" data-price="14"
+                  data-img="https://images.unsplash.com/photo-1571950006418-f99b8b6e1e3a?w=200&q=80&auto=format&fit=crop"
+                  aria-label="Add Natural Wine to order">
+                  + Add to Order
+                </button>
+              </div>
+            </div>
+          </article>
+
+          <article class="menu-item" data-category="drinks">
+            <div class="menu-item-img">
+              <img src="https://images.unsplash.com/photo-1545601445-4d6a0a0565f0?w=600&q=80&auto=format&fit=crop"
+                alt="House-made Lemonade" loading="lazy">
+              <div class="menu-item-badges">
+                <span class="badge-tag badge-vegan">N/A</span>
+                <span class="badge-tag badge-gf">GF</span>
+              </div>
+            </div>
+            <div class="menu-item-body">
+              <h3>Garden Lemonade</h3>
+              <p>House-pressed lemon, fresh lavender, mint, and a hint of elderflower. Served over pebble ice.</p>
+              <div class="menu-item-footer">
+                <span class="menu-item-price">$8</span>
+                <button class="add-to-order-btn"
+                  data-id="drinks-3" data-name="Garden Lemonade" data-price="8"
+                  data-img="https://images.unsplash.com/photo-1545601445-4d6a0a0565f0?w=200&q=80&auto=format&fit=crop"
+                  aria-label="Add Garden Lemonade to order">
+                  + Add to Order
+                </button>
+              </div>
+            </div>
+          </article>
+
+        </div>
+      </div>
+
+      <!-- Diet Key -->
+      <div style="text-align:center; margin-top:40px; padding:24px; background:var(--color-card); border:1px solid var(--color-border); border-radius:var(--radius-lg);">
+        <p style="font-size:0.85rem; color:var(--color-text-muted);">
+          <strong style="color:var(--color-text);">Dietary key:</strong>
+          &nbsp;<span class="badge-tag badge-vegan" style="display:inline;">Veg/Vegan</span>&nbsp;
+          <span class="badge-tag badge-gf" style="display:inline;">GF — Gluten Free</span>&nbsp;
+          <span class="badge-tag badge-spicy" style="display:inline;">Spicy</span>&nbsp;
+          <span class="badge-tag badge-new" style="display:inline;">New / Seasonal</span>&nbsp;
+          Please inform your server of any allergies or dietary restrictions.
+        </p>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ── Footer ── -->
+  <footer class="footer" role="contentinfo">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <a href="index.html" class="navbar-logo" style="font-size:1.3rem;">
+            <div class="logo-icon">🍽</div>
+            <span class="logo-text">Savor</span>
+          </a>
+          <p>Farm-to-table dining crafted with passion, sourced with purpose, and served with heart.</p>
+          <div class="footer-socials">
+            <a class="social-btn" href="#" aria-label="Instagram">📷</a>
+            <a class="social-btn" href="#" aria-label="Facebook">👥</a>
+            <a class="social-btn" href="#" aria-label="Twitter">🐦</a>
+            <a class="social-btn" href="#" aria-label="TikTok">🎵</a>
+          </div>
+        </div>
+        <nav aria-label="Menu navigation">
+          <div class="footer-heading">Explore</div>
+          <ul class="footer-links">
+            <li><a href="index.html" class="footer-link">Home</a></li>
+            <li><a href="menu.html" class="footer-link">Our Menu</a></li>
+            <li><a href="order.html" class="footer-link">Order Online</a></li>
+            <li><a href="contact.html" class="footer-link">Contact</a></li>
+          </ul>
+        </nav>
+        <nav aria-label="Dining navigation">
+          <div class="footer-heading">Dining</div>
+          <ul class="footer-links">
+            <li><a href="contact.html" class="footer-link">Reservations</a></li>
+            <li><a href="#" class="footer-link">Private Events</a></li>
+            <li><a href="#" class="footer-link">Gift Cards</a></li>
+            <li><a href="#" class="footer-link">Catering</a></li>
+          </ul>
+        </nav>
+        <nav aria-label="Company navigation">
+          <div class="footer-heading">Company</div>
+          <ul class="footer-links">
+            <li><a href="index.html" class="footer-link">Our Story</a></li>
+            <li><a href="#" class="footer-link">Sustainability</a></li>
+            <li><a href="#" class="footer-link">Careers</a></li>
+            <li><a href="#" class="footer-link">Press</a></li>
+          </ul>
+        </nav>
+      </div>
+      <div class="footer-bottom">
+        <span>© 2025 Savor Restaurant. All rights reserved.</span>
+        <span>124 Harvest Lane · Downtown · (415) 555-0182</span>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+</html>
