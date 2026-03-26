@@ -81,225 +81,234 @@
               Select items from our menu to build your order. Add as many as you like!
             </p>
 
-            <!-- Quick-Add Menu Grid -->
-            <div style="display:grid; grid-template-columns: repeat(auto-fill, minmax(280px, 1fr)); gap:20px;">
+            <!-- Quick-Add Menu Sections -->
 
-              <!-- Starters -->
-              <div style="grid-column: 1 / -1; margin-top:8px;">
-                <h3 style="font-size:1rem; color:var(--color-text-muted); font-weight:600; text-transform:uppercase; letter-spacing:0.08em; margin-bottom:16px;">
-                  🥗 Starters
-                </h3>
+            <!-- Starters -->
+            <div style="margin-bottom:32px; padding-bottom:32px; border-bottom:1px solid var(--color-border);">
+              <h3 style="font-size:1rem; color:var(--color-text-muted); font-weight:600; text-transform:uppercase; letter-spacing:0.08em; margin-bottom:16px;">
+                🥗 Starters
+              </h3>
+              <div style="display:grid; grid-template-columns: repeat(auto-fill, minmax(280px, 1fr)); gap:20px;">
+
+                <article class="menu-item">
+                  <div class="menu-item-img" style="height:160px;">
+                    <img src="https://images.unsplash.com/photo-1621996346565-e3dbc646d9a9?w=400&q=80&auto=format&fit=crop"
+                      alt="Heirloom Burrata" loading="lazy">
+                  </div>
+                  <div class="menu-item-body">
+                    <h3>Heirloom Burrata</h3>
+                    <div class="menu-item-footer">
+                      <span class="menu-item-price">$18</span>
+                      <button class="add-to-order-btn"
+                        data-id="starter-1" data-name="Heirloom Burrata" data-price="18"
+                        data-img="https://images.unsplash.com/photo-1621996346565-e3dbc646d9a9?w=200&q=80&auto=format&fit=crop"
+                        aria-label="Add Heirloom Burrata">+ Add</button>
+                    </div>
+                  </div>
+                </article>
+
+                <article class="menu-item">
+                  <div class="menu-item-img" style="height:160px;">
+                    <img src="https://images.unsplash.com/photo-1578020190125-f4f7c18bc9cb?w=400&q=80&auto=format&fit=crop"
+                      alt="Ahi Tuna Tartare" loading="lazy">
+                  </div>
+                  <div class="menu-item-body">
+                    <h3>Ahi Tuna Tartare</h3>
+                    <div class="menu-item-footer">
+                      <span class="menu-item-price">$22</span>
+                      <button class="add-to-order-btn"
+                        data-id="starter-2" data-name="Ahi Tuna Tartare" data-price="22"
+                        data-img="https://images.unsplash.com/photo-1578020190125-f4f7c18bc9cb?w=200&q=80&auto=format&fit=crop"
+                        aria-label="Add Ahi Tuna Tartare">+ Add</button>
+                    </div>
+                  </div>
+                </article>
+
+                <article class="menu-item">
+                  <div class="menu-item-img" style="height:160px;">
+                    <img src="https://images.unsplash.com/photo-1555244162-803834f70033?w=400&q=80&auto=format&fit=crop"
+                      alt="Charcuterie Board" loading="lazy">
+                  </div>
+                  <div class="menu-item-body">
+                    <h3>Artisan Charcuterie Board</h3>
+                    <div class="menu-item-footer">
+                      <span class="menu-item-price">$28</span>
+                      <button class="add-to-order-btn"
+                        data-id="starter-4" data-name="Artisan Charcuterie Board" data-price="28"
+                        data-img="https://images.unsplash.com/photo-1555244162-803834f70033?w=200&q=80&auto=format&fit=crop"
+                        aria-label="Add Charcuterie Board">+ Add</button>
+                    </div>
+                  </div>
+                </article>
+
               </div>
+            </div>
 
-              <article class="menu-item">
-                <div class="menu-item-img" style="height:160px;">
-                  <img src="https://images.unsplash.com/photo-1621996346565-e3dbc646d9a9?w=400&q=80&auto=format&fit=crop"
-                    alt="Heirloom Burrata" loading="lazy">
-                </div>
-                <div class="menu-item-body">
-                  <h3>Heirloom Burrata</h3>
-                  <div class="menu-item-footer">
-                    <span class="menu-item-price">$18</span>
-                    <button class="add-to-order-btn"
-                      data-id="starter-1" data-name="Heirloom Burrata" data-price="18"
-                      data-img="https://images.unsplash.com/photo-1621996346565-e3dbc646d9a9?w=200&q=80&auto=format&fit=crop"
-                      aria-label="Add Heirloom Burrata">+ Add</button>
+            <!-- Mains -->
+            <div style="margin-bottom:32px; padding-bottom:32px; border-bottom:1px solid var(--color-border);">
+              <h3 style="font-size:1rem; color:var(--color-text-muted); font-weight:600; text-transform:uppercase; letter-spacing:0.08em; margin-bottom:16px;">
+                🍽 Mains
+              </h3>
+              <div style="display:grid; grid-template-columns: repeat(auto-fill, minmax(280px, 1fr)); gap:20px;">
+
+                <article class="menu-item">
+                  <div class="menu-item-img" style="height:160px;">
+                    <img src="https://images.unsplash.com/photo-1555396273-367ea4eb4db5?w=400&q=80&auto=format&fit=crop"
+                      alt="Wild Salmon" loading="lazy">
                   </div>
-                </div>
-              </article>
-
-              <article class="menu-item">
-                <div class="menu-item-img" style="height:160px;">
-                  <img src="https://images.unsplash.com/photo-1578020190125-f4f7c18bc9cb?w=400&q=80&auto=format&fit=crop"
-                    alt="Ahi Tuna Tartare" loading="lazy">
-                </div>
-                <div class="menu-item-body">
-                  <h3>Ahi Tuna Tartare</h3>
-                  <div class="menu-item-footer">
-                    <span class="menu-item-price">$22</span>
-                    <button class="add-to-order-btn"
-                      data-id="starter-2" data-name="Ahi Tuna Tartare" data-price="22"
-                      data-img="https://images.unsplash.com/photo-1578020190125-f4f7c18bc9cb?w=200&q=80&auto=format&fit=crop"
-                      aria-label="Add Ahi Tuna Tartare">+ Add</button>
+                  <div class="menu-item-body">
+                    <h3>Pan-Seared Wild Salmon</h3>
+                    <div class="menu-item-footer">
+                      <span class="menu-item-price">$34</span>
+                      <button class="add-to-order-btn"
+                        data-id="main-1" data-name="Pan-Seared Wild Salmon" data-price="34"
+                        data-img="https://images.unsplash.com/photo-1555396273-367ea4eb4db5?w=200&q=80&auto=format&fit=crop"
+                        aria-label="Add Wild Salmon">+ Add</button>
+                    </div>
                   </div>
-                </div>
-              </article>
+                </article>
 
-              <article class="menu-item">
-                <div class="menu-item-img" style="height:160px;">
-                  <img src="https://images.unsplash.com/photo-1555244162-803834f70033?w=400&q=80&auto=format&fit=crop"
-                    alt="Charcuterie Board" loading="lazy">
-                </div>
-                <div class="menu-item-body">
-                  <h3>Artisan Charcuterie Board</h3>
-                  <div class="menu-item-footer">
-                    <span class="menu-item-price">$28</span>
-                    <button class="add-to-order-btn"
-                      data-id="starter-4" data-name="Artisan Charcuterie Board" data-price="28"
-                      data-img="https://images.unsplash.com/photo-1555244162-803834f70033?w=200&q=80&auto=format&fit=crop"
-                      aria-label="Add Charcuterie Board">+ Add</button>
+                <article class="menu-item">
+                  <div class="menu-item-img" style="height:160px;">
+                    <img src="https://images.unsplash.com/photo-1544025162-d76694265947?w=400&q=80&auto=format&fit=crop"
+                      alt="Braised Short Rib" loading="lazy">
                   </div>
-                </div>
-              </article>
+                  <div class="menu-item-body">
+                    <h3>Braised Short Rib</h3>
+                    <div class="menu-item-footer">
+                      <span class="menu-item-price">$42</span>
+                      <button class="add-to-order-btn"
+                        data-id="main-2" data-name="Braised Short Rib" data-price="42"
+                        data-img="https://images.unsplash.com/photo-1544025162-d76694265947?w=200&q=80&auto=format&fit=crop"
+                        aria-label="Add Braised Short Rib">+ Add</button>
+                    </div>
+                  </div>
+                </article>
 
-              <!-- Mains -->
-              <div style="grid-column: 1 / -1; margin-top:24px;">
-                <h3 style="font-size:1rem; color:var(--color-text-muted); font-weight:600; text-transform:uppercase; letter-spacing:0.08em; margin-bottom:16px;">
-                  🍽 Mains
-                </h3>
+                <article class="menu-item">
+                  <div class="menu-item-img" style="height:160px;">
+                    <img src="https://images.unsplash.com/photo-1565299585323-38d6b0865b47?w=400&q=80&auto=format&fit=crop"
+                      alt="Mushroom Wellington" loading="lazy">
+                  </div>
+                  <div class="menu-item-body">
+                    <h3>Mushroom Wellington</h3>
+                    <div class="menu-item-footer">
+                      <span class="menu-item-price">$28</span>
+                      <button class="add-to-order-btn"
+                        data-id="main-4" data-name="Mushroom Wellington" data-price="28"
+                        data-img="https://images.unsplash.com/photo-1565299585323-38d6b0865b47?w=200&q=80&auto=format&fit=crop"
+                        aria-label="Add Mushroom Wellington">+ Add</button>
+                    </div>
+                  </div>
+                </article>
+
+                <article class="menu-item">
+                  <div class="menu-item-img" style="height:160px;">
+                    <img src="https://images.unsplash.com/photo-1559847844-5315695dadae?w=400&q=80&auto=format&fit=crop"
+                      alt="Prime Ribeye" loading="lazy">
+                  </div>
+                  <div class="menu-item-body">
+                    <h3>Prime Dry-Aged Ribeye</h3>
+                    <div class="menu-item-footer">
+                      <span class="menu-item-price">$58</span>
+                      <button class="add-to-order-btn"
+                        data-id="main-6" data-name="Prime Dry-Aged Ribeye" data-price="58"
+                        data-img="https://images.unsplash.com/photo-1559847844-5315695dadae?w=200&q=80&auto=format&fit=crop"
+                        aria-label="Add Prime Ribeye">+ Add</button>
+                    </div>
+                  </div>
+                </article>
+
               </div>
+            </div>
 
-              <article class="menu-item">
-                <div class="menu-item-img" style="height:160px;">
-                  <img src="https://images.unsplash.com/photo-1555396273-367ea4eb4db5?w=400&q=80&auto=format&fit=crop"
-                    alt="Wild Salmon" loading="lazy">
-                </div>
-                <div class="menu-item-body">
-                  <h3>Pan-Seared Wild Salmon</h3>
-                  <div class="menu-item-footer">
-                    <span class="menu-item-price">$34</span>
-                    <button class="add-to-order-btn"
-                      data-id="main-1" data-name="Pan-Seared Wild Salmon" data-price="34"
-                      data-img="https://images.unsplash.com/photo-1555396273-367ea4eb4db5?w=200&q=80&auto=format&fit=crop"
-                      aria-label="Add Wild Salmon">+ Add</button>
+            <!-- Pasta & Risotto -->
+            <div style="margin-bottom:32px; padding-bottom:32px; border-bottom:1px solid var(--color-border);">
+              <h3 style="font-size:1rem; color:var(--color-text-muted); font-weight:600; text-transform:uppercase; letter-spacing:0.08em; margin-bottom:16px;">
+                🍝 Pasta &amp; Risotto
+              </h3>
+              <div style="display:grid; grid-template-columns: repeat(auto-fill, minmax(280px, 1fr)); gap:20px;">
+
+                <article class="menu-item">
+                  <div class="menu-item-img" style="height:160px;">
+                    <img src="https://images.unsplash.com/photo-1563379926898-05f4575a45d8?w=400&q=80&auto=format&fit=crop"
+                      alt="Truffle Rigatoni" loading="lazy">
                   </div>
-                </div>
-              </article>
-
-              <article class="menu-item">
-                <div class="menu-item-img" style="height:160px;">
-                  <img src="https://images.unsplash.com/photo-1544025162-d76694265947?w=400&q=80&auto=format&fit=crop"
-                    alt="Braised Short Rib" loading="lazy">
-                </div>
-                <div class="menu-item-body">
-                  <h3>Braised Short Rib</h3>
-                  <div class="menu-item-footer">
-                    <span class="menu-item-price">$42</span>
-                    <button class="add-to-order-btn"
-                      data-id="main-2" data-name="Braised Short Rib" data-price="42"
-                      data-img="https://images.unsplash.com/photo-1544025162-d76694265947?w=200&q=80&auto=format&fit=crop"
-                      aria-label="Add Braised Short Rib">+ Add</button>
+                  <div class="menu-item-body">
+                    <h3>Black Truffle Rigatoni</h3>
+                    <div class="menu-item-footer">
+                      <span class="menu-item-price">$32</span>
+                      <button class="add-to-order-btn"
+                        data-id="pasta-1" data-name="Black Truffle Rigatoni" data-price="32"
+                        data-img="https://images.unsplash.com/photo-1563379926898-05f4575a45d8?w=200&q=80&auto=format&fit=crop"
+                        aria-label="Add Black Truffle Rigatoni">+ Add</button>
+                    </div>
                   </div>
-                </div>
-              </article>
+                </article>
 
-              <article class="menu-item">
-                <div class="menu-item-img" style="height:160px;">
-                  <img src="https://images.unsplash.com/photo-1565299585323-38d6b0865b47?w=400&q=80&auto=format&fit=crop"
-                    alt="Mushroom Wellington" loading="lazy">
-                </div>
-                <div class="menu-item-body">
-                  <h3>Mushroom Wellington</h3>
-                  <div class="menu-item-footer">
-                    <span class="menu-item-price">$28</span>
-                    <button class="add-to-order-btn"
-                      data-id="main-4" data-name="Mushroom Wellington" data-price="28"
-                      data-img="https://images.unsplash.com/photo-1565299585323-38d6b0865b47?w=200&q=80&auto=format&fit=crop"
-                      aria-label="Add Mushroom Wellington">+ Add</button>
+                <article class="menu-item">
+                  <div class="menu-item-img" style="height:160px;">
+                    <img src="https://images.unsplash.com/photo-1543339308-43e59d6b73a6?w=400&q=80&auto=format&fit=crop"
+                      alt="Porcini Risotto" loading="lazy">
                   </div>
-                </div>
-              </article>
-
-              <article class="menu-item">
-                <div class="menu-item-img" style="height:160px;">
-                  <img src="https://images.unsplash.com/photo-1559847844-5315695dadae?w=400&q=80&auto=format&fit=crop"
-                    alt="Prime Ribeye" loading="lazy">
-                </div>
-                <div class="menu-item-body">
-                  <h3>Prime Dry-Aged Ribeye</h3>
-                  <div class="menu-item-footer">
-                    <span class="menu-item-price">$58</span>
-                    <button class="add-to-order-btn"
-                      data-id="main-6" data-name="Prime Dry-Aged Ribeye" data-price="58"
-                      data-img="https://images.unsplash.com/photo-1559847844-5315695dadae?w=200&q=80&auto=format&fit=crop"
-                      aria-label="Add Prime Ribeye">+ Add</button>
+                  <div class="menu-item-body">
+                    <h3>Porcini Mushroom Risotto</h3>
+                    <div class="menu-item-footer">
+                      <span class="menu-item-price">$26</span>
+                      <button class="add-to-order-btn"
+                        data-id="pasta-3" data-name="Porcini Mushroom Risotto" data-price="26"
+                        data-img="https://images.unsplash.com/photo-1543339308-43e59d6b73a6?w=200&q=80&auto=format&fit=crop"
+                        aria-label="Add Porcini Risotto">+ Add</button>
+                    </div>
                   </div>
-                </div>
-              </article>
+                </article>
 
-              <!-- Pasta -->
-              <div style="grid-column: 1 / -1; margin-top:24px;">
-                <h3 style="font-size:1rem; color:var(--color-text-muted); font-weight:600; text-transform:uppercase; letter-spacing:0.08em; margin-bottom:16px;">
-                  🍝 Pasta &amp; Risotto
-                </h3>
               </div>
+            </div>
 
-              <article class="menu-item">
-                <div class="menu-item-img" style="height:160px;">
-                  <img src="https://images.unsplash.com/photo-1563379926898-05f4575a45d8?w=400&q=80&auto=format&fit=crop"
-                    alt="Truffle Rigatoni" loading="lazy">
-                </div>
-                <div class="menu-item-body">
-                  <h3>Black Truffle Rigatoni</h3>
-                  <div class="menu-item-footer">
-                    <span class="menu-item-price">$32</span>
-                    <button class="add-to-order-btn"
-                      data-id="pasta-1" data-name="Black Truffle Rigatoni" data-price="32"
-                      data-img="https://images.unsplash.com/photo-1563379926898-05f4575a45d8?w=200&q=80&auto=format&fit=crop"
-                      aria-label="Add Black Truffle Rigatoni">+ Add</button>
+            <!-- Desserts -->
+            <div>
+              <h3 style="font-size:1rem; color:var(--color-text-muted); font-weight:600; text-transform:uppercase; letter-spacing:0.08em; margin-bottom:16px;">
+                🍮 Desserts
+              </h3>
+              <div style="display:grid; grid-template-columns: repeat(auto-fill, minmax(280px, 1fr)); gap:20px;">
+
+                <article class="menu-item">
+                  <div class="menu-item-img" style="height:160px;">
+                    <img src="https://images.unsplash.com/photo-1578985545062-69928b1d9587?w=400&q=80&auto=format&fit=crop"
+                      alt="Chocolate Lava Cake" loading="lazy">
                   </div>
-                </div>
-              </article>
-
-              <article class="menu-item">
-                <div class="menu-item-img" style="height:160px;">
-                  <img src="https://images.unsplash.com/photo-1543339308-43e59d6b73a6?w=400&q=80&auto=format&fit=crop"
-                    alt="Porcini Risotto" loading="lazy">
-                </div>
-                <div class="menu-item-body">
-                  <h3>Porcini Mushroom Risotto</h3>
-                  <div class="menu-item-footer">
-                    <span class="menu-item-price">$26</span>
-                    <button class="add-to-order-btn"
-                      data-id="pasta-3" data-name="Porcini Mushroom Risotto" data-price="26"
-                      data-img="https://images.unsplash.com/photo-1543339308-43e59d6b73a6?w=200&q=80&auto=format&fit=crop"
-                      aria-label="Add Porcini Risotto">+ Add</button>
+                  <div class="menu-item-body">
+                    <h3>Dark Chocolate Lava Cake</h3>
+                    <div class="menu-item-footer">
+                      <span class="menu-item-price">$14</span>
+                      <button class="add-to-order-btn"
+                        data-id="dessert-1" data-name="Dark Chocolate Lava Cake" data-price="14"
+                        data-img="https://images.unsplash.com/photo-1578985545062-69928b1d9587?w=200&q=80&auto=format&fit=crop"
+                        aria-label="Add Chocolate Lava Cake">+ Add</button>
+                    </div>
                   </div>
-                </div>
-              </article>
+                </article>
 
-              <!-- Desserts -->
-              <div style="grid-column: 1 / -1; margin-top:24px;">
-                <h3 style="font-size:1rem; color:var(--color-text-muted); font-weight:600; text-transform:uppercase; letter-spacing:0.08em; margin-bottom:16px;">
-                  🍮 Desserts
-                </h3>
+                <article class="menu-item">
+                  <div class="menu-item-img" style="height:160px;">
+                    <img src="https://images.unsplash.com/photo-1488477181946-6428a0291777?w=400&q=80&auto=format&fit=crop"
+                      alt="Crème Brûlée" loading="lazy">
+                  </div>
+                  <div class="menu-item-body">
+                    <h3>Vanilla Bean Crème Brûlée</h3>
+                    <div class="menu-item-footer">
+                      <span class="menu-item-price">$12</span>
+                      <button class="add-to-order-btn"
+                        data-id="dessert-2" data-name="Vanilla Bean Crème Brûlée" data-price="12"
+                        data-img="https://images.unsplash.com/photo-1488477181946-6428a0291777?w=200&q=80&auto=format&fit=crop"
+                        aria-label="Add Crème Brûlée">+ Add</button>
+                    </div>
+                  </div>
+                </article>
+
               </div>
-
-              <article class="menu-item">
-                <div class="menu-item-img" style="height:160px;">
-                  <img src="https://images.unsplash.com/photo-1578985545062-69928b1d9587?w=400&q=80&auto=format&fit=crop"
-                    alt="Chocolate Lava Cake" loading="lazy">
-                </div>
-                <div class="menu-item-body">
-                  <h3>Dark Chocolate Lava Cake</h3>
-                  <div class="menu-item-footer">
-                    <span class="menu-item-price">$14</span>
-                    <button class="add-to-order-btn"
-                      data-id="dessert-1" data-name="Dark Chocolate Lava Cake" data-price="14"
-                      data-img="https://images.unsplash.com/photo-1578985545062-69928b1d9587?w=200&q=80&auto=format&fit=crop"
-                      aria-label="Add Chocolate Lava Cake">+ Add</button>
-                  </div>
-                </div>
-              </article>
-
-              <article class="menu-item">
-                <div class="menu-item-img" style="height:160px;">
-                  <img src="https://images.unsplash.com/photo-1488477181946-6428a0291777?w=400&q=80&auto=format&fit=crop"
-                    alt="Crème Brûlée" loading="lazy">
-                </div>
-                <div class="menu-item-body">
-                  <h3>Vanilla Bean Crème Brûlée</h3>
-                  <div class="menu-item-footer">
-                    <span class="menu-item-price">$12</span>
-                    <button class="add-to-order-btn"
-                      data-id="dessert-2" data-name="Vanilla Bean Crème Brûlée" data-price="12"
-                      data-img="https://images.unsplash.com/photo-1488477181946-6428a0291777?w=200&q=80&auto=format&fit=crop"
-                      aria-label="Add Crème Brûlée">+ Add</button>
-                  </div>
-                </div>
-              </article>
-
-            </div><!-- end grid -->
+            </div>
 
             <div style="margin-top:36px; display:flex; justify-content:flex-end;">
               <button onclick="goToStep(2)" class="btn btn-primary btn-lg">
